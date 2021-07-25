@@ -31,7 +31,7 @@
         background-image:url("/images/landing-page.jpg");
         background-size: cover;
         background-position: center center;
-        height: 100%;
+        height: 100vh;
         display: flex;
         padding-bottom: 50px;
     }
