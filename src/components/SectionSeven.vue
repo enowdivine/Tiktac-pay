@@ -6,28 +6,26 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro maiores voluptatum et sequi, nam praesentium pariatur, quibusdam ullam aliquid non fuga eligendi beatae ipsum modi reiciendis mollitia est totam id.
             </p>
             <div class="btn">
-                <Button text="Click to Download" color="green" />
+                <v-btn depressed dark  rounded color="green"><v-icon>mdi-google-play</v-icon> Google Play</v-btn>
+                 <v-btn depressed rounded class="ml-1" dark><v-icon>mdi-apple</v-icon> App Store</v-btn>
             </div>
         </div>
         <div class="image">
-            <img src="../assets/logo.png" alt="Oh no!!">
+            <img src="/images/dashboard.png" alt="Oh no!!">
         </div>
     </section>
 </template>
 
 <script>
-import Button from "../components/Button";
+
     export default{
-        name: 'SectionFour',
-        components:{
-            Button,
-        }
+        name: 'SectionFour'
     }
 </script>
 
 <style scoped>
     section{
-        background-color: rgb(236, 255, 255);
+        background-color: #fff;
         display: flex;
     }
      .description{
@@ -54,6 +52,6 @@ import Button from "../components/Button";
     }
     img{
         width: 100%;
-        height: 100%;
+        height: 90%;
     }
 </style>

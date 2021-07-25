@@ -8,27 +8,23 @@
                 distinctio fuga dolor culpa iusto obcaecati praesentium, quo voluptate fugiat nesciunt voluptas?
             </p>
             <div class="buttons">
-                <Button text="Contacts" color="red" />
-                <Button text="Get Started" color="white" Fcolor="black" />
+                <v-btn dark color="green">contact</v-btn>
+                <v-btn color="white">get started</v-btn>
             </div>
         </div>
     </section>
 </template>
 
 <script>
-import Button from "../components/Button"
 
     export default{
-        name: 'SectionOne',
-        components:{
-            Button,
-        }
+        name: 'SectionOne'
     }
 </script>
 
 <style scoped>
     section{
-        background-color: blue;
+        background-color: #0F054C;
         padding: 30px 0 30px 0;
     }
     .description{
@@ -47,7 +43,9 @@ import Button from "../components/Button"
         margin-top: 20px;
     }
     .buttons{
+        width: 70%;
         display: flex;
         justify-content: space-evenly;
+        margin: auto;
     }
 </style>

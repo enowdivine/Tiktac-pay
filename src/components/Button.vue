@@ -1,8 +1,7 @@
 <template>
     <div class="my-2">
         <v-btn
-            dark
-            large
+            
             v-bind:style="{background: color, 
                             color: Fcolor}"
             >
@@ -23,11 +22,7 @@ export default{
 </script>
 
 <style scoped>
-    #btn{
-        border: none;
-        background-color: darkblue;
-        color: white;
-        padding: 10px 15px 10px 15px;
-        border-radius: 10px;
+    .v-btn{
+        font-weight: bold;
     }
 </style>

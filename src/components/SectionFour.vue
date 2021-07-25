@@ -8,28 +8,25 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro maiores voluptatum et sequi, nam praesentium pariatur, quibusdam ullam aliquid non fuga eligendi beatae ipsum modi reiciendis mollitia est totam id.
             </p>
             <div class="btn">
-                <Button text="Click to Download" color="green" />
+                <v-btn dark color="green">click to download</v-btn>
             </div>
         </div>
         <div class="image">
-            <img src="../assets/logo.png" alt="Oh no!!">
+            <img src="/images/Dashboard-amico.png" alt="Oh no!!">
         </div>
     </section>
 </template>
 
 <script>
-import Button from "../components/Button";
+
     export default{
-        name: 'SectionFour',
-        components:{
-            Button,
-        }
+        name: 'SectionFour'
     }
 </script>
 
 <style scoped>
     section{
-        background-color: rgb(236, 255, 255);
+        background-color: #fff;
         display: flex;
     }
      .description{
@@ -38,7 +35,7 @@ import Button from "../components/Button";
         margin: 100px 0 0 0;
     }
     h3{
-        font-size: 55px;
+        font-size: 40px;
         text-align: left;
     }
     p{

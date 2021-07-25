@@ -1,21 +1,21 @@
 <template>
     <section>
         <div class="image">
-            <img src="../assets/logo.png" alt="Oh no!!">
+            <img src="/images/new-functions.png" alt="Oh no!!">
         </div>
         <div class="description">
-            <h3>Unlimited Services For All Kinds Of Businesses</h3>
+            <h3>Flexible Functionalities For All Transactions</h3>
             <p>
                 TiktacPay enables all kinds of businesses both individuals and companies to make quick and secure 
                 onlinetransactions.
             </p>
             <ul>
-                <li><a href="#">QR Code Payments</a></li>
-                <li><a href="#">Smart Integrations</a></li>
-                <li><a href="#">Payment Links</a></li>
-                <li><a href="#">Scan and Pay</a></li>
-                <li><a href="#">Documented APIs</a></li>
-                <li><a href="#">Application</a></li>
+                <li><a href="#"><v-icon>mdi-checkbox-marked-circle</v-icon>QR Code Payments</a></li>
+                <li><a href="#"><v-icon>mdi-checkbox-marked-circle</v-icon>Smart Integrations</a></li>
+                <li><a href="#"><v-icon>mdi-checkbox-marked-circle</v-icon>Payment Links</a></li>
+                <li><a href="#"><v-icon>mdi-checkbox-marked-circle</v-icon>Scan and Pay</a></li>
+                <li><a href="#"><v-icon>mdi-checkbox-marked-circle</v-icon>Documented APIs</a></li>
+                <li><a href="#"><v-icon>mdi-checkbox-marked-circle</v-icon>Application</a></li>
             </ul>
         </div>
     </section>
@@ -29,14 +29,16 @@
 
 <style scoped>
     section{
+        background-color: lightcyan;
         display: flex;
     }
     .description{
         width: 50%;
         padding: 30px;
+        margin-top: 6%;
     }
     h3{
-        font-size: 55px;
+        font-size: 40px;
         text-align: left;
     }
     p{
@@ -50,8 +52,12 @@
     }
     ul li a{
         text-decoration: none;
-        color: darkblue;
+        color: black;
         font-size: 22px;
+        font-weight: bold;
+    }
+    .v-icon{
+        color: green;
     }
     .image{
         width: 50%;

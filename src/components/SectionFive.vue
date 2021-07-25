@@ -1,7 +1,7 @@
 <template>
     <section>
         <div class="image">
-            <img src="../assets/logo.png" alt="Oh no!!">
+            <img src="/images/security-rafiki.png" alt="Oh no!!">
         </div>
         <div class="description">
             <h3>The Most Easy, Fast and Secure Payment Platform </h3>
@@ -13,25 +13,22 @@
                laboriosam molestias numquam in alias reiciendis similique possimus?
             </p>
             <div class="btn">
-                <Button text="Get Started" color="blue" />
+                <v-btn dark color="#0F054C">get started</v-btn>
             </div>
         </div>
     </section>
 </template>
 
 <script>
-import Button from "../components/Button";
 
     export default{
-        name: 'SectionFive',
-        components:{
-            Button,
-        }
+        name: 'SectionFive'
     }
 </script>
 
 <style scoped>
     section{
+        background-color: lightcyan;
         display: flex;
     }
     .description{
@@ -39,8 +36,9 @@ import Button from "../components/Button";
         padding: 30px;
     }
     h3{
-        font-size: 55px;
+        font-size: 40px;
         text-align: left;
+        margin-top: 10%;
     }
     p{
         font-size: 20px;

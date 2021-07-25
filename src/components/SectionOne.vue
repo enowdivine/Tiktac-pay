@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="showcase">
         <div class="description">
             <h3>#1 Online Cross Plateform Transactions Made Easy</h3>
             <p>
@@ -10,30 +10,28 @@
                 Local Debit cards (Mastercard and Visa)
             </p>
             <div class="buttons">
-                <Button text="testing" color="red" />
-                <Button text="testing" color="blue" />
+                <v-btn dark color="green"><b>Get Started</b></v-btn>
+                <v-btn><b>Learn More</b></v-btn>
             </div>
-        </div>
-        <div class="image">
-            <img src="../assets/logo.png" alt="Oh no!!">
         </div>
     </section>
 </template>
 
 <script>
-import Button from "../components/Button"
 
     export default{
         name: 'SectionOne',
-        components:{
-            Button,
-        }
     }
 </script>
 
 <style scoped>
     section{
+        background-image:url("/images/landing-page.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 100%;
         display: flex;
+        padding-bottom: 50px;
     }
     .description{
         width: 50%;
@@ -42,23 +40,17 @@ import Button from "../components/Button"
     h3{
        font-size: 50px; 
        text-align: left;
+       color: white;
     }
     p{
         text-align: left;
         font-size: 20px;
         margin-top: 20px;
+        color: white;
     }
     .buttons{
-        width: 50%;
+        width: 60%;
         display: flex;
         justify-content: space-evenly;
-    }
-    .image{
-        width: 50%;
-        padding: 30px;
-    }
-    img{
-        width: 100%;
-        height: 100%;
     }
 </style>

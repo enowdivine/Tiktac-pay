@@ -2,7 +2,7 @@
     <section>
         <div class="footer-above">
             <div class="description">
-            <h3>Tiktac-Pay</h3>
+            <h3>Tiktac Pay</h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, ab voluptas. Atque, odit dolores! Mollitia maiores impedit vel ratione voluptates 
                 repellendus incidunt amet architecto! Dolor natus harum veritatis sint doloribus?
@@ -16,6 +16,7 @@
                 <li><a href="#">FAQ's</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Cookies Policy</a></li>
                 <li><a href="#">Contacts</a></li>
             </ul>
         </div>
@@ -25,7 +26,6 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Resources</a></li>
                 <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Media & Press</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
         </div>
@@ -44,9 +44,9 @@
                 Copyright &copy; 2021 Tiktac Financial Company Limited
             </p>
             <ul>
-                <li><a href="#">#</a></li>
-                <li><a href="#">#</a></li>
-                <li><a href="#">#</a></li>
+                <li><a href="#"><v-icon color="white">mdi-facebook</v-icon></a></li>
+                <li><a href="#"><v-icon color="white">mdi-linkedin</v-icon></a></li>
+                <li><a href="#"><v-icon color="white">mdi-twitter</v-icon></a></li>
             </ul>
         </div>
     </section>
@@ -61,7 +61,7 @@
 <style scoped>
     section{
         padding: 30px;
-        background-color: darkblue;
+        background-color: #0F054C;
          justify-content: space-evenly;
     }
     .footer-above{
