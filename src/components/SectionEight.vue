@@ -3,16 +3,16 @@
          <div class="overlay"></div>
             <v-container>
                      <div class="description">
-            <h3>Start Accepting payments Today</h3>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet beatae ad nesciunt ut cum. Aperiam, 
-                eaque aut eius 
-                distinctio fuga dolor culpa iusto obcaecati praesentium, quo voluptate fugiat nesciunt voluptas?
-            </p>
-            <div class="buttons">
-               <v-btn depressed dark color="#0F054C">create your tiktac account</v-btn>
-            </div>
-        </div>
+                        <h3>Start Accepting payments Today</h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet beatae ad nesciunt ut cum. Aperiam, 
+                            eaque aut eius 
+                            distinctio fuga dolor culpa iusto obcaecati praesentium, quo voluptate fugiat nesciunt voluptas?
+                        </p>
+                        <div class="buttons">
+                        <v-btn depressed color="white">create your tiktac account</v-btn>
+                        </div>
+                    </div>
             </v-container>
     </section>
 </template>
@@ -57,8 +57,7 @@
         font-size: 20px;
         margin-top: 20px;
     }
-    .buttons{
-        display: flex;
-        justify-content: space-evenly;
+    .v-btn{
+        font-weight: bold;
     }
 </style>
