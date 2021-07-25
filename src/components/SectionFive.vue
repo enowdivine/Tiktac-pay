@@ -1,6 +1,8 @@
 <template>
     <section>
-        <div class="image">
+        <v-container>
+            <v-row>
+                <div class="image">
             <img src="/images/security-rafiki.png" alt="Oh no!!">
         </div>
         <div class="description">
@@ -16,6 +18,8 @@
                 <v-btn dark color="#0F054C">get started</v-btn>
             </div>
         </div>
+            </v-row>
+        </v-container>
     </section>
 </template>
 
@@ -30,10 +34,12 @@
     section{
         background-color: lightcyan;
         display: flex;
+        min-height: 600px;
     }
     .description{
         width: 50%;
         padding: 30px;
+        margin: 0 0 0 40px;
     }
     h3{
         font-size: 40px;
@@ -58,11 +64,11 @@
         font-size: 22px;
     }
     .image{
-        width: 50%;
+        width: 35%;
         padding: 30px;
     }
     img{
         width: 100%;
-        height: 100%;
+        height: 80%;
     }
 </style>

@@ -1,7 +1,8 @@
 <template>
     <section class="action">
          <div class="overlay"></div>
-        <div class="description">
+            <v-container>
+                     <div class="description">
             <h3>Start Accepting payments Today</h3>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet beatae ad nesciunt ut cum. Aperiam, 
@@ -12,6 +13,7 @@
                <v-btn depressed dark color="#0F054C">create your tiktac account</v-btn>
             </div>
         </div>
+            </v-container>
     </section>
 </template>
 
@@ -28,6 +30,7 @@
         background-size: cover;
         padding: 30px 0 30px 0;
         position: relative;
+        min-height: 400px;
     }
     .description{
         width: 50%;

@@ -2,7 +2,7 @@
     <header>
         <h1>Tiktac<span class="pay">Pay</span></h1>
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="/about">About</a></li>
         <li><a href="#">Services</a></li>
         <div class="dropdown">
         <button class="dropbtn">Integrations</button>

@@ -1,6 +1,8 @@
 <template>
     <section>
-        <div class="description">
+        <v-container>
+            <v-row>
+                <div class="description">
             <h3>Plugin Module</h3>
             <p>
                 For easy intergration, Download our woocormmerce plugin
@@ -12,8 +14,10 @@
             </div>
         </div>
         <div class="image">
-            <img src="/images/Dashboard-amico.png" alt="Oh no!!">
+            <img src="/images/undraw_monitor_iqpq.png" alt="Oh no!!">
         </div>
+            </v-row>
+        </v-container>
     </section>
 </template>
 
@@ -28,11 +32,12 @@
     section{
         background-color: #fff;
         display: flex;
+        min-height: 500px;
     }
      .description{
         width: 50%;
         padding: 30px;
-        margin: 100px 0 0 0;
+        margin: 50px 0 0 0;
     }
     h3{
         font-size: 40px;
@@ -48,7 +53,7 @@
         margin-top: 30px;
     }
     .image{
-        width: 50%;
+        width: 35%;
         padding: 30px;
     }
     img{

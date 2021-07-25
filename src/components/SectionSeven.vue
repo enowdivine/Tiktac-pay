@@ -1,6 +1,8 @@
 <template>
     <section>
-        <div class="description">
+        <v-container>
+            <v-row>
+                <div class="description">
             <h3>Application Download</h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro maiores voluptatum et sequi, nam praesentium pariatur, quibusdam ullam aliquid non fuga eligendi beatae ipsum modi reiciendis mollitia est totam id.
@@ -13,6 +15,8 @@
         <div class="image">
             <img src="/images/dashboard.png" alt="Oh no!!">
         </div>
+            </v-row>
+        </v-container>
     </section>
 </template>
 
@@ -47,7 +51,7 @@
         margin-top: 30px;
     }
     .image{
-        width: 50%;
+        width: 40%;
         padding: 30px;
     }
     img{

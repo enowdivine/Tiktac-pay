@@ -1,6 +1,7 @@
 <template>
     <section class="showcase">
-        <div class="description">
+        <v-container>
+            <div class="description">
             <h3>#1 Online Cross Plateform Transactions Made Easy</h3>
             <p>
                 Tiktacpay is a cross plateform system that enables you to 
@@ -14,6 +15,7 @@
                 <v-btn><b>Learn More</b></v-btn>
             </div>
         </div>
+        </v-container>
     </section>
 </template>
 

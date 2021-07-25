@@ -1,6 +1,7 @@
 <template>
     <section>
-        <div class="description">
+        <v-container>
+            <div class="description">
             <h3>Get In Touch</h3>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet beatae ad nesciunt ut cum. Aperiam, 
@@ -12,6 +13,7 @@
                 <v-btn color="white">get started</v-btn>
             </div>
         </div>
+        </v-container>
     </section>
 </template>
 
@@ -26,6 +28,7 @@
     section{
         background-color: #0F054C;
         padding: 30px 0 30px 0;
+        min-height: 450px;
     }
     .description{
         width: 50%;

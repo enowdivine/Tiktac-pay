@@ -1,8 +1,9 @@
 <template>
     <section>
-        <div class="footer-above">
+        <v-container>
+            <div class="footer-above">
             <div class="description">
-            <h3>Tiktac Pay</h3>
+            <h3>Tiktac<span class="pay">Pay</span></h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, ab voluptas. Atque, odit dolores! Mollitia maiores impedit vel ratione voluptates 
                 repellendus incidunt amet architecto! Dolor natus harum veritatis sint doloribus?
@@ -32,10 +33,10 @@
         <div class="address">
             <h3>Address</h3>
             <ul>
-                <li>Addrss:<a href="#">Buea, SW, Cameroon</a></li>
-                <li>Email:<a href="#">info@tiktacpay.com</a></li>
-                <li>Phone:<a href="#">(+237) 000 000 000</a></li>
-                <li>FAQ:<a href="#">(+237) 000 000 000</a></li>
+                <li><v-icon color="white">mdi-map-marker</v-icon><a class="ml-1" href="#">Buea, SW, Cameroon</a></li>
+                <li><v-icon color="white">mdi-email</v-icon><a class="ml-1" href="#">info@tiktacpay.com</a></li>
+                <li><v-icon color="white">mdi-cellphone-iphone</v-icon><a class="ml-1" href="#">(+237) 000 000 000</a></li>
+                <li><v-icon color="white">mdi-cellphone-iphone</v-icon><a class="ml-1" href="#">(+237) 000 000 000</a></li>
             </ul>
         </div>
         </div>
@@ -49,6 +50,7 @@
                 <li><a href="#"><v-icon color="white">mdi-twitter</v-icon></a></li>
             </ul>
         </div>
+        </v-container>
     </section>
 </template>
 
@@ -62,7 +64,7 @@
     section{
         padding: 30px;
         background-color: #0F054C;
-         justify-content: space-evenly;
+         justify-content: center;
     }
     .footer-above{
         margin-top: 30px;
@@ -86,6 +88,10 @@
         font-size: 25px;
         text-align: left;
         padding-left: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .pay{
+        font-family:Georgia, 'Times New Roman', Times, serif;
     }
     p{
         color: white;

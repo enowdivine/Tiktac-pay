@@ -1,6 +1,8 @@
 <template>
     <section>
-        <div class="image">
+        <v-container>
+            <v-row>
+                <div class="image">
             <img src="/images/new-functions.png" alt="Oh no!!">
         </div>
         <div class="description">
@@ -10,14 +12,16 @@
                 onlinetransactions.
             </p>
             <ul>
-                <li><a href="#"><v-icon>mdi-checkbox-marked-circle</v-icon>QR Code Payments</a></li>
-                <li><a href="#"><v-icon>mdi-checkbox-marked-circle</v-icon>Smart Integrations</a></li>
-                <li><a href="#"><v-icon>mdi-checkbox-marked-circle</v-icon>Payment Links</a></li>
-                <li><a href="#"><v-icon>mdi-checkbox-marked-circle</v-icon>Scan and Pay</a></li>
-                <li><a href="#"><v-icon>mdi-checkbox-marked-circle</v-icon>Documented APIs</a></li>
-                <li><a href="#"><v-icon>mdi-checkbox-marked-circle</v-icon>Application</a></li>
+                <li><v-icon>mdi-checkbox-marked-circle</v-icon><a class="ml-1" href="#">QR Code Payments</a></li>
+                <li><v-icon>mdi-checkbox-marked-circle</v-icon><a class="ml-1" href="#">Smart Integrations</a></li>
+                <li><v-icon>mdi-checkbox-marked-circle</v-icon><a class="ml-1" href="#">Payment Links</a></li>
+                <li><v-icon>mdi-checkbox-marked-circle</v-icon><a class="ml-1" href="#">Scan and Pay</a></li>
+                <li><v-icon>mdi-checkbox-marked-circle</v-icon><a class="ml-1" href="#">Documented APIs</a></li>
+                <li><v-icon>mdi-checkbox-marked-circle</v-icon><a class="ml-1" href="#">Application</a></li>
             </ul>
         </div>
+            </v-row>
+        </v-container>
     </section>
 </template>
 
@@ -31,11 +35,12 @@
     section{
         background-color: lightcyan;
         display: flex;
+        min-height: 600px;
     }
     .description{
         width: 50%;
         padding: 30px;
-        margin-top: 6%;
+        margin: 4% 0 0 60px;
     }
     h3{
         font-size: 40px;
@@ -60,11 +65,12 @@
         color: green;
     }
     .image{
-        width: 50%;
+        width: 35%;
         padding: 30px;
+        margin-top: 80px;
     }
     img{
         width: 100%;
-        height: 100%;
+        height: 80%;
     }
 </style>
