@@ -3,7 +3,7 @@
         <v-container>
             <v-row>
                 <div class="image">
-            <img src="/images/security-rafiki.png" alt="Oh no!!">
+            <img src="/images/Secure-Server-amico.png" alt="Oh no!!">
         </div>
         <div class="description">
             <h3>The Most Easy, Fast and Secure Payment Platform </h3>
@@ -64,8 +64,9 @@
         font-size: 22px;
     }
     .image{
-        width: 35%;
+        width: 40%;
         padding: 30px;
+        margin-top: 5%;
     }
     img{
         width: 100%;
