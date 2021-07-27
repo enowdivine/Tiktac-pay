@@ -74,6 +74,7 @@
         </v-row>
       </v-container>
     </section>
+    <SectionSeven />
     <SectionEight />
     <Footer />
   </div>
@@ -81,6 +82,7 @@
 
 <script>
 import Header from "../components/Header";
+import SectionSeven from "../components/SectionSeven";
 import SectionEight from "../components/SectionEight";
 import Footer from "../components/Footer";
 
@@ -88,6 +90,7 @@ export default {
   name: "About",
   components: {
     Header,
+    SectionSeven,
     SectionEight,
     Footer,
   },
@@ -112,7 +115,6 @@ export default {
     }
     .container{
       position: relative;
-      z-index: 1;
     }
   .about{
     margin: 70px;

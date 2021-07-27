@@ -1,9 +1,9 @@
 <template>
     <header>
         <h1>Tiktac<span class="pay">Pay</span></h1>
-        <li><a href="#">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
-        <li><a href="#">Services</a></li>
+        <li><a href="/support">Support</a></li>
         <div class="dropdown">
         <button class="dropbtn">Integrations</button>
             <div class="dropdown-content">
@@ -12,7 +12,7 @@
                 <a href="#">Wordpress Plugins</a>
             </div>
         </div>
-        <li><a href="#">Contact</a></li>
+        <li><a href="/contact">Contact</a></li>
         <v-btn color="white"><v-icon>mdi-account-plus</v-icon> <span class="ml-1">Sign Up / Login</span></v-btn>
     </header>
 </template>
