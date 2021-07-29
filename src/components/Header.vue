@@ -57,7 +57,7 @@ export default {
     justify-content: space-evenly;
     }
 
-    .topnav .icon {
+    .topnav .icon{
     display: none;
     }
 
