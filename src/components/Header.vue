@@ -1,19 +1,26 @@
 <template>
     <header>
-        <h1>Tiktac<span class="pay">Pay</span></h1>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/support">Support</a></li>
-        <div class="dropdown">
-        <button class="dropbtn">Integrations</button>
-            <div class="dropdown-content">
-                <a href="#">HTTP Docs</a>
-                <a href="#">Python SDK</a>
-                <a href="#">Wordpress Plugins</a>
-            </div>
+        <div class="topnav" id="myTopnav">
+            <h1>Tiktac<span class="pay">Pay</span></h1>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/support">Support</a></li>
+            <li>
+                <div class="dropdown">
+                <button class="dropbtn">Integrations</button>
+                    <div class="dropdown-content">
+                        <a href="#">HTTP Docs</a>
+                        <a href="#">Python SDK</a>
+                        <a href="#">Wordpress Plugins</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/register"><v-btn color="white"><v-icon>mdi-account-plus</v-icon> <span class="ml-1">Sign Up / Login</span></v-btn></a></li>
+            <a href="javascript:void(0);" class="icon" v-on:click="myFunction">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-        <li><a href="/contact">Contact</a></li>
-        <v-btn color="white"><v-icon>mdi-account-plus</v-icon> <span class="ml-1">Sign Up / Login</span></v-btn>
     </header>
 </template>
 
@@ -21,6 +28,18 @@
 
 export default {
   name: "Header",
+
+  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    // methods:{
+    //     myFunction: function({
+    //         var x = document.getElementById("myTopnav");
+    //         if (x.className === "topnav") {
+    //             x.className += " responsive";
+    //         } else {
+    //             x.className = "topnav";
+    //         }
+    //         })
+    // },
 }
 </script>
 
@@ -28,12 +47,20 @@ export default {
 <style scoped>
     header{
         background-color: #0F054C;
-        display: flex;
-        justify-content: space-evenly;
         align-items: center;
         margin: 0px;
-        padding: 15px 10px 15px 10px;
+        padding: 15px 0 15px 0;
     }
+
+    .topnav {
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+    .topnav .icon {
+    display: none;
+    }
+
     h1{
         color: white;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -99,4 +126,28 @@ export default {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: none;}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav li:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
 </style>
