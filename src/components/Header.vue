@@ -2,25 +2,59 @@
     <header>
         <div class="topnav" id="myTopnav">
             <h1>Tiktac<span class="pay">Pay</span></h1>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/support">Support</a></li>
+            <li><router-link to="/">Home</router-link></li>
+            <li><router-link to="/about">About</router-link></li>
+            <li><router-link to="/support">Support</router-link></li>
             <li>
                 <div class="dropdown">
                 <button class="dropbtn">Integrations</button>
                     <div class="dropdown-content">
-                        <a href="#">HTTP Docs</a>
-                        <a href="#">Python SDK</a>
-                        <a href="#">Wordpress Plugins</a>
+                        <router-link to="#">HTTP Docs</router-link>
+                        <router-link to="#">Python SDK</router-link>
+                        <router-link to="#">Wordpress Plugins</router-link>
                     </div>
                 </div>
             </li>
-            <li><a href="/contact">Contact</a></li>
+            <li><router-link to="/contact">Contact</router-link></li>
             <li><a href="/register"><v-btn color="white"><v-icon>mdi-account-plus</v-icon> <span class="ml-1">Sign Up / Login</span></v-btn></a></li>
-            <a href="javascript:void(0);" class="icon" v-on:click="myFunction">
+            <a href="javascript:void(0);" class="icon" @click.stop="drawer = !drawer">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
+
+        <v-navigation-drawer
+          v-model="drawer"
+          absolute
+          temporary
+        >
+          <v-list-item>
+            <v-list-item-avatar>
+              <v-img src="https://randomuser.me/api/portraits/men/78.jpg"></v-img>
+            </v-list-item-avatar>
+
+            <v-list-item-content>
+              <v-list-item-title>TiktacPay</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-divider></v-divider>
+
+          <v-list dense>
+            <v-list-item
+              v-for="item in items"
+              :key="item.title"
+              link
+            >
+              <v-list-item-icon>
+                <v-icon>{{ item.icon }}</v-icon>                                                         
+              </v-list-item-icon>
+
+              <v-list-item-content>
+                <v-list-item-title> <router-link :to="item.page">{{ item.title }}</router-link> </v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list>
+        </v-navigation-drawer>
     </header>
 </template>
 
@@ -28,18 +62,20 @@
 
 export default {
   name: "Header",
-
-  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-    // methods:{
-    //     myFunction: function({
-    //         var x = document.getElementById("myTopnav");
-    //         if (x.className === "topnav") {
-    //             x.className += " responsive";
-    //         } else {
-    //             x.className = "topnav";
-    //         }
-    //         })
-    // },
+  data () {
+      return {
+        drawer: null,
+        items: [
+          { title: 'Home', icon: 'mdi-view-dashboard', page: '/' },
+          { title: 'About', icon: 'mdi-forum', page: '/about' },
+          { title: 'Support', icon: 'mdi-forum', page: '/support' },
+          { title: 'HTTP Docs', icon: 'mdi-forum', page: '/httpdocs' },
+          { title: 'Python SDK', icon: 'mdi-forum', page: '/pythonsdk' },
+          { title: 'Wordpress Plugins', icon: 'mdi-forum', page: '/WPplugins' },
+          { title: 'Contact', icon: 'mdi-forum', page: '/contact' },
+        ],
+      }
+    },
 }
 </script>
 
@@ -71,6 +107,7 @@ export default {
     }
     li{
         list-style: none;
+        margin-top: 20px;
     }
     li a{
         text-decoration: none;
@@ -91,6 +128,7 @@ export default {
   font-weight: bold;
   font-size: 16px;
   border: none;
+  margin-top: -15px;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -129,10 +167,18 @@ export default {
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
+  h1{
+    margin-left: -40px;
+  }
+  .icon{
+    margin-right: -40px;
+  }
   .topnav li:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
+    margin-top: 13px;
+    font-size: 20px;
   }
 }
 

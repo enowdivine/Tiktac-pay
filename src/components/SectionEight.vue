@@ -60,4 +60,19 @@
     .v-btn{
         font-weight: bold;
     }
+
+    @media only screen and (max-width:480px){
+    .description{
+        width: 100%;
+        margin: 0;
+    }
+    .buttons{
+        width: 100%;
+        margin: 0;
+    }
+    .v-btn{
+        display: block;
+        margin: 10px auto;
+    }
+}
 </style>

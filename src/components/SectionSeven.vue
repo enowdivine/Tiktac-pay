@@ -40,6 +40,7 @@
     h3{
         font-size: 55px;
         text-align: left;
+        line-height: 50px;
     }
     p{
         font-size: 20px;
@@ -56,6 +57,30 @@
     }
     img{
         width: 100%;
-        height: 90%;
+        height: 100%;
+        padding: 0;
     }
+
+    @media only screen and (max-width:480px){
+    .description{
+        width: 100%;
+        margin: 0;
+    }
+    .btn{
+        width: 100%;
+        margin: 0;
+    }
+    .v-btn{
+        margin: 5px;
+    }
+    .image{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
 </style>

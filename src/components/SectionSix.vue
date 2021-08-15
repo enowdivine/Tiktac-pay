@@ -51,4 +51,19 @@
         justify-content: space-evenly;
         margin: auto;
     }
+
+    @media only screen and (max-width:480px){
+    .description{
+        width: 100%;
+        margin: 0;
+    }
+    .buttons{
+        width: 100%;
+        margin: 0;
+    }
+    .v-btn{
+        display: block;
+        margin-top: 10px;
+    }
+}
 </style>

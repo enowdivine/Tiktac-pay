@@ -214,4 +214,11 @@ export default {
     }
     .mapouter{position:relative;text-align:right;height:400px;width:100%;}
     .gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}
+
+  @media screen and (max-width: 600px) {
+    .v-card{
+      width: 100%;
+      margin: 20px 0;
+    }
+}
 </style>

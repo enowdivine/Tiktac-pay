@@ -112,4 +112,31 @@
         text-decoration: none;
         color: white;
     }
+
+    @media only screen and (max-width:480px){
+    .footer-above{
+        display: block;
+    }
+    .description,
+    .company,
+    .support,
+    .address{
+        width: 100%;
+        text-align: center;
+    }
+    ul li, p, h3{
+        text-align: center;
+    }
+    .footer-below{
+        display: block;
+    }
+    .footer-below ul{
+        display: block;
+        margin: auto;
+    }
+    .footer-below ul li{
+        display: inline;
+        margin: 10px;
+    }
+}
 </style>

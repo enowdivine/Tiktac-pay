@@ -17,30 +17,30 @@
     <section class="about">
       <v-container>
         <v-row>
-            <div class="description">
-              <h3>Who We Are </h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur reprehenderit 
-              officiis beatae esse alias blanditiis eum corporis, quibusdam atque, 
-              sed nostrum error dolorum vel unde magni, iusto debitis velit. Tenetur?<br><br>
+              <div class="description">
+                <h3>Who We Are </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur reprehenderit 
+                  officiis beatae esse alias blanditiis eum corporis, quibusdam atque, 
+                  sed nostrum error dolorum vel unde magni, iusto debitis velit. Tenetur?<br><br>
 
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur reprehenderit 
-              officiis beatae esse alias blanditiis eum corporis, quibusdam atque, 
-              sed nostrum error dolorum vel unde magni, iusto debitis velit. Tenetur?<br><br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur reprehenderit 
+                  officiis beatae esse alias blanditiis eum corporis, quibusdam atque, 
+                  sed nostrum error dolorum vel unde magni, iusto debitis velit. Tenetur?<br><br>
 
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur reprehenderit 
-              officiis beatae esse alias blanditiis eum corporis, quibusdam atque, 
-              sed nostrum error dolorum vel unde magni, iusto debitis velit. Tenetur?<br><br>
-              </p>
-            </div>
-          <div class="image">
-            <img src="/images/bgPic.jpg" alt="Oh no!">
-          </div>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur reprehenderit 
+                  officiis beatae esse alias blanditiis eum corporis, quibusdam atque, 
+                  sed nostrum error dolorum vel unde magni, iusto debitis velit. Tenetur?<br><br>
+                </p>
+              </div>
+               <div class="image">
+                <img src="/images/bgPic.jpg" alt="Oh no!">
+              </div>
         </v-row>
 
         <div class="team"><h2>Our Team</h2></div>
 
-        <v-row>
+          <v-row>
             <v-card elevation="2">
               <img src="/images/bgPic.jpg" alt="Oh no!">
               <h4>Deon Achuo</h4>
@@ -71,7 +71,7 @@
               <h4>Oben Desmond</h4>
               <p><i>PRO</i></p>
             </v-card>
-        </v-row>
+          </v-row>
       </v-container>
     </section>
     <SectionSeven />
@@ -164,4 +164,32 @@ export default {
       background-color: rgb(218, 218, 218);
       padding: 10px;
     }
+
+
+    /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) {
+    .v-row{
+      width: 100%;
+    }
+  .description{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .image{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .teamMembers{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .v-card{
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+  }
+}
 </style>

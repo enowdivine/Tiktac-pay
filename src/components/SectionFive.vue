@@ -45,6 +45,7 @@
         font-size: 40px;
         text-align: left;
         margin-top: 10%;
+        line-height: 50px;
     }
     p{
         font-size: 20px;
@@ -72,4 +73,20 @@
         width: 100%;
         height: 80%;
     }
+
+    @media only screen and (max-width:480px){
+    .description{
+        width: 100%;
+        margin: 0;
+    }
+    .image{
+      width: 100%;
+      margin-top: 10px;
+      margin: 0;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+    }
+}
 </style>

@@ -60,4 +60,19 @@
         width: 100%;
         height: 100%;
     }
+
+    @media only screen and (max-width:480px){
+    .description{
+        width: 100%;
+        margin: 0;
+    }
+    .image{
+      width: 100%;
+      margin-top: 10px;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+    }
+}
 </style>

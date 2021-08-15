@@ -62,9 +62,11 @@ section {
 h3 {
   font-size: 40px;
   text-align: left;
+  line-height: 50px;
 }
 p {
   font-size: 20px;
+  text-align: left;
 }
 ul li {
   list-style: none;
@@ -88,5 +90,19 @@ ul li a {
 img {
   width: 100%;
   height: 80%;
+}
+
+@media only screen and (max-width:480px){
+    .description{
+        width: 100%;
+    }
+    .image{
+      width: 100%;
+      margin-top: 10px;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+    }
 }
 </style>
