@@ -2,10 +2,15 @@
   <div>
     <Header />
     <SectionOne />
+    <ShowcaseOne />
     <SectionTwo />
+    <ShowcaseTwo />
     <SectionThree />
+    <ShowcaseThree />
     <SectionFour />
+    <ShowcaseFour />
     <SectionFive />
+    <ShowcaseFive />
     <SectionSix />
     <SectionSeven />
     <SectionEight />
@@ -16,10 +21,15 @@
 <script>
 import Header from "../components/Header";
 import SectionOne from "../components/SectionOne";
+import ShowcaseOne from "../components/ShowcaseOne";
 import SectionTwo from "../components/SectionTwo";
+import ShowcaseTwo from "../components/ShowcaseTwo";
 import SectionThree from "../components/SectionThree";
+import ShowcaseThree from "../components/ShowcaseThree";
 import SectionFour from "../components/SectionFour";
+import ShowcaseFour from "../components/ShowcaseFour";
 import SectionFive from "../components/SectionFive";
+import ShowcaseFive from "../components/ShowcaseFive";
 import SectionSix from "../components/SectionSix";
 import SectionSeven from "../components/SectionSeven";
 import SectionEight from "../components/SectionEight";
@@ -30,14 +40,19 @@ export default {
   components: {
     Header,
     SectionOne,
+    ShowcaseOne,
     SectionTwo,
+    ShowcaseTwo,
     SectionThree,
+    ShowcaseThree,
     SectionFour,
+    ShowcaseFour,
     SectionFive,
+    ShowcaseFive,
     SectionSix,
     SectionSeven,
     SectionEight,
     Footer,
   },
-}
+};
 </script>

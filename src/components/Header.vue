@@ -1,129 +1,168 @@
 <template>
-    <header>
-        <div class="topnav" id="myTopnav">
-            <h1>Tiktac<span class="pay">Pay</span></h1>
-            <li><router-link to="/">Home</router-link></li>
-            <li><router-link to="/about">About</router-link></li>
-            <li><router-link to="/support">Support</router-link></li>
-            <li>
-                <div class="dropdown">
-                <button class="dropbtn">Integrations</button>
-                    <div class="dropdown-content">
-                        <router-link to="#">HTTP Docs</router-link>
-                        <router-link to="#">Python SDK</router-link>
-                        <router-link to="#">Wordpress Plugins</router-link>
-                    </div>
-                </div>
-            </li>
-            <li><router-link to="/contact">Contact</router-link></li>
-            <li><a href="/register"><v-btn color="white"><v-icon>mdi-account-plus</v-icon> <span class="ml-1">Sign Up / Login</span></v-btn></a></li>
-            <a href="javascript:void(0);" class="icon" @click.stop="drawer = !drawer">
-                <i class="fa fa-bars"></i>
-            </a>
+  <header>
+    <div class="topnav" id="myTopnav">
+      <div class="logo">
+        <h1>Tiktac<span class="pay">Pay</span></h1>
+      </div>
+      <li><router-link to="/">Home</router-link></li>
+      <li><router-link to="/about">About</router-link></li>
+      <li><router-link to="/support">Support</router-link></li>
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn">Integrations</button>
+          <div class="dropdown-content">
+            <router-link to="#">HTTP Docs</router-link>
+            <router-link to="#">Python SDK</router-link>
+            <router-link to="#">Wordpress Plugins</router-link>
+          </div>
         </div>
-
-        <v-navigation-drawer
-          v-model="drawer"
-          absolute
-          temporary
+      </li>
+      <li><router-link to="/contact">Contact</router-link></li>
+      <div class="btn-group">
+        <div class="btn1">
+          <v-btn rounded
+            ><router-link class="one" to="/register"
+              >Sign Up</router-link
+            ></v-btn
+          >
+        </div>
+        <div class="btn2">
+          <v-btn rounded dark color="#0f054c"
+            ><router-link to="/login">Login</router-link></v-btn
+          >
+        </div>
+        <a
+          href="javascript:void(0);"
+          class="icon"
+          @click.stop="drawer = !drawer"
         >
-          <v-list-item>
-            <v-list-item-avatar>
-              <v-img src="https://randomuser.me/api/portraits/men/78.jpg"></v-img>
-            </v-list-item-avatar>
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
 
-            <v-list-item-content>
-              <v-list-item-title>TiktacPay</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
+    <v-navigation-drawer v-model="drawer" absolute temporary>
+      <v-list-item>
+        <v-list-item-avatar>
+          <v-img src="https://randomuser.me/api/portraits/men/78.jpg"></v-img>
+        </v-list-item-avatar>
 
-          <v-divider></v-divider>
+        <v-list-item-content>
+          <v-list-item-title>TiktacPay</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
 
-          <v-list dense>
-            <v-list-item
-              v-for="item in items"
-              :key="item.title"
-              link
-            >
-              <v-list-item-icon>
-                <v-icon>{{ item.icon }}</v-icon>                                                         
-              </v-list-item-icon>
+      <v-divider></v-divider>
 
-              <v-list-item-content>
-                <v-list-item-title> <router-link :to="item.page">{{ item.title }}</router-link> </v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </v-list>
-        </v-navigation-drawer>
-    </header>
+      <v-list dense>
+        <v-list-item v-for="item in items" :key="item.title" link>
+          <v-list-item-icon>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>
+              <router-link :to="item.page">{{ item.title }}</router-link>
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+  </header>
 </template>
 
 <script>
-
 export default {
   name: "Header",
-  data () {
-      return {
-        drawer: null,
-        items: [
-          { title: 'Home', icon: 'mdi-view-dashboard', page: '/' },
-          { title: 'About', icon: 'mdi-forum', page: '/about' },
-          { title: 'Support', icon: 'mdi-forum', page: '/support' },
-          { title: 'HTTP Docs', icon: 'mdi-forum', page: '/httpdocs' },
-          { title: 'Python SDK', icon: 'mdi-forum', page: '/pythonsdk' },
-          { title: 'Wordpress Plugins', icon: 'mdi-forum', page: '/WPplugins' },
-          { title: 'Contact', icon: 'mdi-forum', page: '/contact' },
-        ],
-      }
-    },
-}
+  data() {
+    return {
+      drawer: null,
+      items: [
+        { title: "Home", icon: "mdi-view-dashboard", page: "/" },
+        { title: "About", icon: "mdi-forum", page: "/about" },
+        { title: "Support", icon: "mdi-forum", page: "/support" },
+        { title: "HTTP Docs", icon: "mdi-forum", page: "/httpdocs" },
+        { title: "Python SDK", icon: "mdi-forum", page: "/pythonsdk" },
+        { title: "Wordpress Plugins", icon: "mdi-forum", page: "/WPplugins" },
+        { title: "Contact", icon: "mdi-forum", page: "/contact" },
+      ],
+    };
+  },
+};
 </script>
 
-
 <style scoped>
-    header{
-        background-color: #0F054C;
-        align-items: center;
-        margin: 0px;
-        padding: 15px 0 15px 0;
-    }
+header {
+  background-color: white;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  align-items: center;
+  margin: 0px;
+  padding: 15px 0 15px 0;
+  -moz-box-shadow: 3px 3px 5px 6px #0f054c;
+  -webkit-box-shadow: 3px 3px 5px 6px #0f054c;
+  box-shadow: 3px 3px 5px 6px #0f054c;
+}
 
-    .topnav {
-    display: flex;
-    justify-content: space-evenly;
-    }
+.topnav {
+  display: flex;
+  justify-content: space-evenly;
+}
 
-    .topnav .icon{
-    display: none;
-    }
-
-    h1{
-        color: white;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-    }
-    .pay{
-        font-family:Georgia, 'Times New Roman', Times, serif;
-    }
-    li{
-        list-style: none;
-        margin-top: 20px;
-    }
-    li a{
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-    }
-    li:hover{
-        border-bottom: 1px solid #fff;
-    }
-    .v-btn{
-        font-weight: bold;
-    }
-
-    /* Dropdown Button */
-.dropbtn {
+.topnav .icon {
+  display: none;
+}
+.logo {
+  margin-top: 7px;
+}
+h1 {
+  color: #0f054c;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.pay {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+li {
+  list-style: none;
+  margin-top: 20px;
+}
+li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 8px 10px;
+}
+li a:hover {
+  color: #0f054c;
+  border-bottom: 2px solid #0f054c;
+}
+.btn-group {
+  display: flex;
+  margin-top: 10px;
+}
+.btn1 {
+  margin: 0 5px 0 0;
+}
+.btn2 {
+  margin: 0 0 0 5px;
+}
+.btn2 .v-btn a {
+  font-weight: bold;
+  text-decoration: none;
   color: white;
+}
+.btn1 .v-btn a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  color: black;
   padding: 16px;
   font-weight: bold;
   font-size: 16px;
@@ -144,7 +183,7 @@ export default {
   position: absolute;
   background-color: white;
   min-width: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -157,23 +196,32 @@ export default {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #0F054C; color: white;}
+.dropdown-content a:hover {
+  background-color: #0f054c;
+  color: white;
+}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: none;}
+.dropdown:hover .dropbtn:hover {
+  background-color: none;
+}
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  h1{
+  h1 {
     margin-left: -40px;
   }
-  .icon{
+  .icon {
     margin-right: -40px;
   }
-  .topnav li:not(:first-child) {display: none;}
+  .topnav li:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -184,7 +232,9 @@ export default {
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
