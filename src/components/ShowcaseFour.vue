@@ -1,7 +1,9 @@
 <template>
-  <div class="image">
-    <img src="/images/showcase4.png" alt="Online Payment" />
-  </div>
+  <v-container>
+    <div class="image">
+      <img src="/images/showcase4.png" alt="Online Payment" />
+    </div>
+  </v-container>
 </template>
 
 <style scoped>

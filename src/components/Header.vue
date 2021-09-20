@@ -2,7 +2,9 @@
   <header>
     <div class="topnav" id="myTopnav">
       <div class="logo">
-        <h1>Tiktac<span class="pay">Pay</span></h1>
+        <h1>
+          <router-link to="/">Tiktac<span class="pay">Pay</span></router-link>
+        </h1>
       </div>
       <li><router-link to="/">Home</router-link></li>
       <li><router-link to="/about">About</router-link></li>
@@ -95,16 +97,16 @@ export default {
 header {
   background-color: white;
   position: fixed;
-  overflow: hidden;
+
   width: 100%;
   top: 0;
   z-index: 999;
   align-items: center;
   margin: 0px;
   padding: 15px 0 15px 0;
-  -moz-box-shadow: 3px 3px 5px 6px #0f054c;
-  -webkit-box-shadow: 3px 3px 5px 6px #0f054c;
-  box-shadow: 3px 3px 5px 6px #0f054c;
+  -moz-box-shadow: 3px 3px 5px 6px grey;
+  -webkit-box-shadow: 3px 3px 5px 6px grey;
+  box-shadow: 3px 3px 2px 0px grey;
 }
 
 .topnav {
@@ -124,6 +126,10 @@ h1 {
 }
 .pay {
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+.logo h1 a {
+  text-decoration: none;
+  color: #0f054c;
 }
 li {
   list-style: none;
@@ -184,7 +190,7 @@ li a:hover {
   background-color: white;
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 999;
 }
 
 /* Links inside the dropdown */

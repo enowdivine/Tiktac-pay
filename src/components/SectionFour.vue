@@ -16,7 +16,7 @@
           </div>
         </div>
         <div class="image">
-          <img src="/images/image4.jpg" alt="Oh no!!" />
+          <img src="/images/undraw_monitor_iqpq.png" alt="Oh no!!" />
         </div>
       </v-row>
     </v-container>

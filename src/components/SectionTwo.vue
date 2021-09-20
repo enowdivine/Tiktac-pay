@@ -56,7 +56,7 @@ export default {
 section {
   background-color: #fff;
   display: flex;
-  padding: 40px 0 40px 0;
+  padding: 20px 0 40px 0;
 }
 .description {
   margin-top: 3%;
