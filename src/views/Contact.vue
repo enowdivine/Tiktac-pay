@@ -39,14 +39,14 @@
             </div>
             <div class="list">
               <div class="item">
-                <v-icon color="white">mdi-cellphone-iphone</v-icon>
-                <h3>Call</h3>
+                <v-icon color="white">mdi-whatsapp</v-icon>
+                <h3>WhatsApp</h3>
                 <p><a href="#">(+237) 600 000 000</a></p>
               </div>
             </div>
             <div class="list">
               <div class="item">
-                <v-icon color="white">mdi-cellphone-iphone</v-icon>
+                <v-icon color="white">mdi-whatsapp</v-icon>
                 <h3>WhatsApp</h3>
                 <p><a href="#">(+237) 600 000 000</a></p>
               </div>
@@ -62,6 +62,7 @@
                     :counter="10"
                     label="First name"
                     required
+                    color="#0f054c"
                   ></v-text-field>
 
                   <v-text-field
@@ -70,6 +71,7 @@
                     :counter="10"
                     label="Last name"
                     required
+                    color="#0f054c"
                   ></v-text-field>
 
                   <v-text-field
@@ -77,6 +79,7 @@
                     :rules="emailRules"
                     label="E-mail"
                     required
+                    color="#0f054c"
                   ></v-text-field>
 
                   <v-text-field
@@ -85,6 +88,7 @@
                     :rules="numberRules"
                     label="Number"
                     required
+                    color="#0f054c"
                   ></v-text-field>
 
                   <v-textarea
@@ -92,6 +96,7 @@
                     outlined
                     name="input-7-4"
                     label="Message Here"
+                    color="#0f054c"
                   ></v-textarea>
 
                   <v-btn color="#0F054C" dark> Submit </v-btn>

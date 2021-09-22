@@ -47,8 +47,8 @@
   height: 230px;
   border-radius: 20px;
   padding: 10px;
-  background-color: #0f054c;
-  color: white;
+  background-color: whitesmoke;
+  color: black;
   margin: auto;
 }
 </style>

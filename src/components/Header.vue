@@ -6,20 +6,22 @@
           <router-link to="/">Tiktac<span class="pay">Pay</span></router-link>
         </h1>
       </div>
-      <li><router-link to="/">Home</router-link></li>
-      <li><router-link to="/about">About</router-link></li>
-      <li><router-link to="/support">Support</router-link></li>
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn">Integrations</button>
-          <div class="dropdown-content">
-            <router-link to="#">HTTP Docs</router-link>
-            <router-link to="#">Python SDK</router-link>
-            <router-link to="#">Wordpress Plugins</router-link>
+      <div class="links">
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/about">About</router-link></li>
+        <li><router-link to="/support">Support</router-link></li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">Integrations</button>
+            <div class="dropdown-content">
+              <router-link to="#">HTTP Docs</router-link>
+              <router-link to="#">Python SDK</router-link>
+              <router-link to="#">Wordpress Plugins</router-link>
+            </div>
           </div>
-        </div>
-      </li>
-      <li><router-link to="/contact">Contact</router-link></li>
+        </li>
+        <li><router-link to="/contact">Contact</router-link></li>
+      </div>
       <div class="btn-group">
         <div class="btn1">
           <v-btn rounded
@@ -131,6 +133,13 @@ h1 {
   text-decoration: none;
   color: #0f054c;
 }
+.links {
+  margin-top: 20px;
+}
+.links li {
+  display: inline;
+  margin: 10px;
+}
 li {
   list-style: none;
   margin-top: 20px;
@@ -187,7 +196,7 @@ li a:hover {
   display: none;
   border-radius: 10px;
   position: absolute;
-  background-color: white;
+  background-color: whitesmoke;
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 999;
