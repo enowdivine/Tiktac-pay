@@ -1,17 +1,23 @@
 <template>
-  <div>
-    <v-list-item class="px-2">
-      <v-list-item-title>Enow Divine</v-list-item-title>
-      <v-list-item-avatar>
-        <v-img src="https://randomuser.me/api/portraits/men/85.jpg"></v-img>
-      </v-list-item-avatar>
-    </v-list-item>
+  <div class="board">
+    <div class="profile">
+      <p class="name"><a href="#">Enow Divine</a></p>
+      <a href="#">
+        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt=""
+      /></a>
+    </div>
 
     <div class="card">
       <img src="/images/visa.png" alt="" />
     </div>
 
-    <div>
+    <div class="transaction">
+      <div class="recent">
+        <p>Recent Transactions</p>
+      </div>
+      <div class="all">
+        <p><a href="#">See All</a></p>
+      </div>
       <Transactions />
     </div>
   </div>
@@ -27,7 +33,35 @@ export default {
 </script>
 
 <style scoped>
+.board {
+  padding-bottom: 125px;
+}
+.profile {
+  padding: 30px 0 0 0;
+}
+.name {
+  font-weight: bold;
+  font-size: 15px;
+  width: 80%;
+  float: left;
+  margin: 13px -20px 0 -30px;
+  text-align: right;
+}
+.name a {
+  text-decoration: none;
+  color: black;
+}
+.profile img {
+  border-radius: 50px;
+  margin: 0 20px 0 0;
+  width: 50px;
+  float: right;
+}
+.transaction {
+  margin-top: 20px;
+}
 .card {
+  margin-top: 60px;
   width: 100%;
   height: 150px;
   margin-bottom: 10px;
@@ -35,5 +69,16 @@ export default {
 .card img {
   width: 100%;
   height: 100%;
+}
+.recent {
+  width: 60%;
+  float: left;
+}
+.recent p {
+  color: grey;
+}
+.all p a {
+  text-decoration: none;
+  color: grey;
 }
 </style>

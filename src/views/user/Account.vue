@@ -10,51 +10,47 @@
         <v-row>
           <v-col
             ><div class="name">
-              <h3>Hello Divine</h3>
+              <h2>Hello Divine</h2>
               <p>Here you can manage all your transactions</p>
             </div></v-col
           >
           <v-col
             ><div class="search">
-              <v-text-field
-                v-model="search"
-                append-icon="mdi-magnify"
-                label="Search"
-                single-line
-                hide-details
-              ></v-text-field></div
+              <input type="text" name="search" placeholder="Search..." /></div
           ></v-col>
         </v-row>
         <v-row>
-          <v-col><div class="one">one</div></v-col>
-          <v-col><div class="two">two</div></v-col>
-          <v-col><div class="three">three</div></v-col>
+          <v-col
+            ><div class="one"><One /></div
+          ></v-col>
+          <v-col
+            ><div class="two"><One /></div
+          ></v-col>
+          <v-col
+            ><div class="three"><One /></div
+          ></v-col>
         </v-row>
         <v-row>
           <div class="middle-column">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam
-            excepturi ducimus cumque voluptatem dolorem repellendus fuga,
-            doloremque accusantium aut fugiat repellat esse nulla aperiam
-            necessitatibus molestias laborum, nemo totam ratione.
+            <div>
+              <Graph />
+            </div>
           </div>
         </v-row>
         <v-row>
           <v-col>
             <div class="map">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
-              nam molestiae dolor atque provident sequi dolorem quibusdam
-              perferendis quis veniam ut, quaerat fugiat qui itaque, illo
-              doloribus ducimus quas. Excepturi.
+              <div>
+                <Location />
+              </div>
             </div>
           </v-col>
           <v-col
             ><div class="chart">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Cupiditate ut quos nesciunt, aperiam accusamus rem tenetur ipsum,
-              saepe facilis voluptates dignissimos explicabo molestias.
-              Consequuntur tenetur fuga rem delectus esse labore?
-            </div></v-col
-          >
+              <div>
+                <Progress />
+              </div></div
+          ></v-col>
         </v-row>
       </div>
       <div class="right">
@@ -67,13 +63,21 @@
 </template>
 
 <script>
+import One from "../../components/One.vue";
 import LeftColumn from "../../components/LeftColumn";
 import RightColumn from "../../components/RightColumn";
+import Graph from "../../components/accounts/Graph";
+import Progress from "../../components/accounts/Progress";
+import Location from "../../components/accounts/Location";
 export default {
   name: "Account",
   components: {
     LeftColumn,
     RightColumn,
+    One,
+    Graph,
+    Progress,
+    Location,
   },
   data() {
     return {
@@ -86,6 +90,24 @@ export default {
 <style scoped>
 .my-account {
   background-color: whitesmoke;
+  min-height: 700px;
+  padding-bottom: 40px;
+}
+
+.name {
+  text-align: left;
+}
+
+.name p {
+  font-size: 15px;
+}
+
+.search input {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
 }
 .one,
 .two,
@@ -100,11 +122,11 @@ export default {
   height: 100%;
 }
 .middle {
-  width: 50%;
+  width: 57%;
   padding: 40px;
 }
 .right {
-  width: 32%;
+  width: 25%;
   padding-right: 20px;
 }
 .left-column {
@@ -115,6 +137,7 @@ export default {
   border-radius: 10px;
   padding: 10px;
   min-height: 200px;
+  width: 100%;
 }
 .right-column {
   background-color: white;
@@ -124,11 +147,14 @@ export default {
   border-radius: 10px;
   padding: 10px;
   min-height: 200px;
+  width: 150%;
 }
 .chart {
   background-color: white;
   border-radius: 10px;
   padding: 10px;
   min-height: 200px;
+  width: 50%;
+  float: right;
 }
 </style>
