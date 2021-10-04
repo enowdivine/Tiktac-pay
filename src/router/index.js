@@ -6,6 +6,7 @@ import Contact from "../views/Contact.vue";
 import Support from "../views/Support.vue";
 import Register from "../views/Register.vue";
 import Login from "../views/Login.vue";
+import Account from "../views/user/Account.vue";
 
 Vue.use(VueRouter);
 
@@ -40,7 +41,11 @@ const routes = [
     name: "Login",
     component: Login,
   },
-  
+  {
+    path: "/account",
+    name: "Account",
+    component: Account,
+  },
 ];
 
 const router = new VueRouter({
