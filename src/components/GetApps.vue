@@ -1,18 +1,14 @@
 <template>
   <div>
     <div class="image">
-      <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="" />
+      <img src="/images/board.png" alt="" />
     </div>
     <div class="txt">
       <p>Get Mobile Apps</p>
     </div>
     <div class="links">
-      <a href="#">
-        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt=""
-      /></a>
-      <a href="#"
-        ><img src="https://randomuser.me/api/portraits/men/85.jpg" alt=""
-      /></a>
+      <a href="#"> <img class="google" src="/images/google1.png" alt="" /></a>
+      <a href="#"><img class="apple" src="/images/apple1.jpg" alt="" /></a>
     </div>
   </div>
 </template>
@@ -37,5 +33,8 @@ export default {
   border-radius: 50px;
   width: 50px;
   margin: 4px;
+}
+.links .google {
+  width: 65px;
 }
 </style>

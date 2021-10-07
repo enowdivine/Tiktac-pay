@@ -91,7 +91,6 @@ export default {
 .my-account {
   background-color: whitesmoke;
   min-height: 700px;
-  padding-bottom: 40px;
 }
 
 .name {
@@ -136,7 +135,7 @@ export default {
   background-color: white;
   border-radius: 10px;
   padding: 10px;
-  min-height: 200px;
+  min-height: 300px;
   width: 100%;
 }
 .right-column {
@@ -146,14 +145,14 @@ export default {
   background-color: white;
   border-radius: 10px;
   padding: 10px;
-  min-height: 200px;
+  min-height: 300px;
   width: 150%;
 }
 .chart {
   background-color: white;
   border-radius: 10px;
   padding: 10px;
-  min-height: 200px;
+  min-height: 300px;
   width: 50%;
   float: right;
 }

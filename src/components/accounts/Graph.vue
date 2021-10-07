@@ -1,11 +1,11 @@
 <template>
-  <v-card class="mx-auto text-center" color="#0f054c" dark max-width="600">
+  <v-card class="mx-auto text-center" color="white" dark max-width="600">
     <v-card-text>
       <v-sheet color="rgba(0, 0, 0, .12)">
         <v-sparkline
           :value="value"
-          color="whitesmoke"
-          height="100"
+          color="#0f054c"
+          height="120"
           padding="24"
           stroke-linecap="round"
           smooth

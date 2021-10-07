@@ -3,7 +3,7 @@
     <div class="gmap_canvas">
       <iframe
         width="100%"
-        height="100%"
+        height="300px"
         id="gmap_canvas"
         src="https://maps.google.com/maps?q=buea&t=&z=11&ie=UTF8&iwloc=&output=embed"
         frameborder="0"

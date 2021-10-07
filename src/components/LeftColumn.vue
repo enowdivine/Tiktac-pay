@@ -4,7 +4,7 @@
       <v-navigation-drawer permanent>
         <v-list-item class="px-2">
           <v-list-item-avatar>
-            <v-img src="https://randomuser.me/api/portraits/men/85.jpg"></v-img>
+            <v-img src="/images/logo.jpeg"></v-img>
           </v-list-item-avatar>
 
           <v-list-item-title class="headx">TiktacPay</v-list-item-title>
@@ -44,11 +44,11 @@ export default {
     return {
       items: [
         { title: "Dashboard", icon: "mdi-view-dashboard" },
-        { title: "My Wallets", icon: "mdi-image" },
-        { title: "Transaction", icon: "mdi-help-box" },
-        { title: "Invoice", icon: "mdi-view-dashboard" },
-        { title: "Cards", icon: "mdi-image" },
-        { title: "Settings", icon: "mdi-help-box" },
+        { title: "My Wallets", icon: "mdi-wallet" },
+        { title: "Transaction", icon: "mdi-account-cash" },
+        { title: "Invoice", icon: "mdi-receipt" },
+        { title: "Cards", icon: "mdi-credit-card-sync" },
+        { title: "Settings", icon: "mdi-cog" },
       ],
       right: null,
     };
@@ -57,7 +57,7 @@ export default {
 </script>
 <style scoped>
 .board {
-  padding-bottom: 40px;
+  padding-bottom: 120px;
 }
 .links {
   margin-left: 20px;

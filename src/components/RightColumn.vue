@@ -1,6 +1,7 @@
 <template>
   <div class="board">
     <div class="profile">
+      <v-icon>mdi-bell</v-icon>
       <p class="name"><a href="#">Enow Divine</a></p>
       <a href="#">
         <img src="https://randomuser.me/api/portraits/men/85.jpg" alt=""
@@ -34,7 +35,14 @@ export default {
 
 <style scoped>
 .board {
-  padding-bottom: 125px;
+  padding-bottom: 50px;
+}
+.v-icon {
+  float: left;
+  margin: 10px 0 0 20px;
+  padding: 5px;
+  background-color: whitesmoke;
+  border-radius: 50px;
 }
 .profile {
   padding: 30px 0 0 0;
@@ -42,7 +50,7 @@ export default {
 .name {
   font-weight: bold;
   font-size: 15px;
-  width: 80%;
+  width: 70%;
   float: left;
   margin: 13px -20px 0 -30px;
   text-align: right;
