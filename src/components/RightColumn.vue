@@ -9,7 +9,7 @@
     </div>
 
     <div class="card">
-      <img src="/images/visa.png" alt="" />
+      <!-- <img src="/images/visa.png" alt="" /> -->
     </div>
 
     <div class="transaction">
@@ -36,6 +36,7 @@ export default {
 <style scoped>
 .board {
   padding-bottom: 50px;
+  bottom: 0;
 }
 .v-icon {
   float: left;
@@ -68,11 +69,15 @@ export default {
 .transaction {
   margin-top: 20px;
 }
-.card {
+/* .card {
   margin-top: 60px;
   width: 100%;
   height: 150px;
   margin-bottom: 10px;
+} */
+.card {
+  width: 100%;
+  height: 50px;
 }
 .card img {
   width: 100%;

@@ -56,6 +56,20 @@
       </div>
       <div class="amount"><p>+100 000 FCFA</p></div>
     </div>
+    <div class="transaction">
+      <div class="desc">
+        <p class="type">Lorem ipsum dolor</p>
+        <p class="time">3 hours Ago</p>
+      </div>
+      <div class="amount"><p>+100 000 FCFA</p></div>
+    </div>
+    <div class="transaction">
+      <div class="desc">
+        <p class="type">Lorem ipsum dolor</p>
+        <p class="time">3 hours Ago</p>
+      </div>
+      <div class="amount"><p>+100 000 FCFA</p></div>
+    </div>
   </div>
 </template>
 

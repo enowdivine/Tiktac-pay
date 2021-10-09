@@ -1,31 +1,7 @@
 <template>
   <div class="board">
     <div class="links">
-      <v-navigation-drawer permanent>
-        <v-list-item class="px-2">
-          <v-list-item-avatar>
-            <v-img src="/images/logo.jpeg"></v-img>
-          </v-list-item-avatar>
-
-          <v-list-item-title class="headx">TiktacPay</v-list-item-title>
-        </v-list-item>
-
-        <v-divider></v-divider>
-
-        <v-list dense nav>
-          <v-list-item v-for="item in items" :key="item.title" link>
-            <v-list-item-icon>
-              <v-icon>{{ item.icon }}</v-icon>
-            </v-list-item-icon>
-
-            <v-list-item-content>
-              <v-list-item-title class="items">{{
-                item.title
-              }}</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list>
-      </v-navigation-drawer>
+      <Slider />
     </div>
     <div class="get-apps">
       <GetApps />
@@ -34,27 +10,17 @@
 </template>
 
 <script>
+import Slider from "../components/accounts/Slider.vue";
 import GetApps from "./GetApps";
 export default {
   name: "LeftColumn",
   components: {
     GetApps,
-  },
-  data() {
-    return {
-      items: [
-        { title: "Dashboard", icon: "mdi-view-dashboard" },
-        { title: "My Wallets", icon: "mdi-wallet" },
-        { title: "Transaction", icon: "mdi-account-cash" },
-        { title: "Invoice", icon: "mdi-receipt" },
-        { title: "Cards", icon: "mdi-credit-card-sync" },
-        { title: "Settings", icon: "mdi-cog" },
-      ],
-      right: null,
-    };
+    Slider,
   },
 };
 </script>
+
 <style scoped>
 .board {
   padding-bottom: 120px;
@@ -66,9 +32,7 @@ export default {
 .headx {
   font-weight: bold;
 }
-.items {
-  text-align: left;
-}
+
 .get-apps {
   background-color: whitesmoke;
   width: 80%;

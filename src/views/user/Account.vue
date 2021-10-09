@@ -91,6 +91,7 @@ export default {
 .my-account {
   background-color: whitesmoke;
   min-height: 700px;
+  border-bottom: 20px solid white;
 }
 
 .name {
