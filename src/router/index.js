@@ -8,6 +8,7 @@ import Register from "../views/Register.vue";
 import Login from "../views/Login.vue";
 import Account from "../views/user/Account.vue";
 import Billing from "../views/user/Billing.vue";
+import Apps from "../views/user/Apps.vue";
 
 Vue.use(VueRouter);
 
@@ -51,6 +52,11 @@ const routes = [
     path: "/billing",
     name: "Billing",
     component: Billing,
+  },
+  {
+    path: "/apps",
+    name: "Apps",
+    component: Apps,
   },
 ];
 

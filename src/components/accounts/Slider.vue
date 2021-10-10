@@ -15,7 +15,7 @@
         <v-list dense nav>
           <v-list-item v-for="item in items" :key="item.title" link>
             <v-list-item-icon>
-              <v-icon>{{ item.icon }}</v-icon>
+              <v-icon small>{{ item.icon }}</v-icon>
             </v-list-item-icon>
 
             <v-list-item-content>
@@ -37,7 +37,7 @@ export default {
   data() {
     return {
       items: [
-        { title: "Dashboard", icon: "mdi-view-dashboard", page: "/dashboard" },
+        { title: "Dashboard", icon: "mdi-view-dashboard", page: "/account" },
         { title: "My API's", icon: "mdi-wallet", page: "/api" },
         { title: "My Apps", icon: "mdi-receipt", page: "/apps" },
         {
@@ -58,5 +58,10 @@ export default {
   text-align: left;
   color: black;
   text-decoration: none;
+}
+.v-icon {
+  padding: 10px;
+  background-color: whitesmoke;
+  border-radius: 3px;
 }
 </style>
