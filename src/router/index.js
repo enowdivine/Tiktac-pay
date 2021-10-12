@@ -9,6 +9,7 @@ import Login from "../views/Login.vue";
 import Account from "../views/user/Account.vue";
 import Billing from "../views/user/Billing.vue";
 import Apps from "../views/user/Apps.vue";
+import Transactions from "../views/user/Transactions.vue";
 
 Vue.use(VueRouter);
 
@@ -57,6 +58,11 @@ const routes = [
     path: "/apps",
     name: "Apps",
     component: Apps,
+  },
+  {
+    path: "/transactions",
+    name: "Transactions",
+    component: Transactions,
   },
 ];
 

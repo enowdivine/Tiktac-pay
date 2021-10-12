@@ -43,7 +43,7 @@ export default {
         {
           title: "Transaction",
           icon: "mdi-account-cash",
-          page: "/transaction",
+          page: "/transactions",
         },
         { title: "Billing", icon: "mdi-credit-card-sync", page: "/billing" },
         { title: "Settings", icon: "mdi-cog", page: "/setting" },
