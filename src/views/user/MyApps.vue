@@ -11,18 +11,8 @@
     <div class="main">
       <h2>Manage Applications</h2>
       <v-btn color="grey" dark depressed class="new-app">New App</v-btn>
-      <div class="app" v-for="i in 6" :key="i">
-        <div class="name">Google</div>
-        <div class="desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-          maiores rerum ratione et, esse vitae perferendis, natus, totam
-          reprehenderit ipsa culpa corporis nam. Ipsam, fugiat voluptates. Atque
-          veritatis quos debitis?
-        </div>
-        <div class="actions">
-          <v-icon small class="mr-2 edit">mdi-pencil</v-icon>
-          <v-icon small class="del">mdi-delete</v-icon>
-        </div>
+      <div class="app">
+        <Apps />
       </div>
     </div>
   </div>
@@ -31,11 +21,13 @@
 <script>
 import Slider from "../../components/accounts/Slider.vue";
 import GetApps from "../../components/GetApps.vue";
+import Apps from "../../components/accounts/Apps.vue";
 export default {
-  name: "Apps",
+  name: "MyApps",
   components: {
     GetApps,
     Slider,
+    Apps,
   },
 };
 </script>

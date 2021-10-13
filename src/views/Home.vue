@@ -6,7 +6,6 @@
     <ShowcaseTwo />
     <SectionThree />
     <SectionFour />
-    <ShowcaseFour />
     <SectionFive />
     <SectionSix />
     <SectionSeven />
@@ -22,7 +21,6 @@ import SectionTwo from "../components/SectionTwo";
 import ShowcaseTwo from "../components/ShowcaseTwo";
 import SectionThree from "../components/SectionThree";
 import SectionFour from "../components/SectionFour";
-import ShowcaseFour from "../components/ShowcaseFour";
 import SectionFive from "../components/SectionFive";
 import SectionSix from "../components/SectionSix";
 import SectionSeven from "../components/SectionSeven";
@@ -38,7 +36,6 @@ export default {
     ShowcaseTwo,
     SectionThree,
     SectionFour,
-    ShowcaseFour,
     SectionFive,
     SectionSix,
     SectionSeven,

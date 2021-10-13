@@ -3,7 +3,7 @@
     <div class="topnav" id="myTopnav">
       <div class="logo">
         <h1>
-          <router-link to="/account"
+          <router-link to="/dashboard"
             >Tiktac<span class="pay">Pay</span></router-link
           >
         </h1>

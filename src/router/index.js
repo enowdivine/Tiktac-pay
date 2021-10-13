@@ -6,10 +6,10 @@ import Contact from "../views/Contact.vue";
 import Support from "../views/Support.vue";
 import Register from "../views/Register.vue";
 import Login from "../views/Login.vue";
-import Account from "../views/user/Account.vue";
-import Billing from "../views/user/Billing.vue";
-import Apps from "../views/user/Apps.vue";
+import Dashboard from "../views/user/Dashboard.vue";
+import MyApps from "../views/user/MyApps.vue";
 import Transactions from "../views/user/Transactions.vue";
+import Integration from "../components/accounts/Integration.vue";
 
 Vue.use(VueRouter);
 
@@ -45,24 +45,25 @@ const routes = [
     component: Login,
   },
   {
-    path: "/account",
-    name: "Account",
-    component: Account,
+    path: "/dashboard",
+    name: "Dashboard",
+    component: Dashboard,
   },
-  {
-    path: "/billing",
-    name: "Billing",
-    component: Billing,
-  },
+
   {
     path: "/apps",
-    name: "Apps",
-    component: Apps,
+    name: "MyApps",
+    component: MyApps,
   },
   {
     path: "/transactions",
     name: "Transactions",
     component: Transactions,
+  },
+  {
+    path: "/integration",
+    name: "Integration",
+    component: Integration,
   },
 ];
 

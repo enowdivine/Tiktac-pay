@@ -37,16 +37,15 @@ export default {
   data() {
     return {
       items: [
-        { title: "Dashboard", icon: "mdi-view-dashboard", page: "/account" },
-        { title: "My API's", icon: "mdi-wallet", page: "/api" },
+        { title: "Dashboard", icon: "mdi-view-dashboard", page: "/dashboard" },
+        { title: "Integration", icon: "mdi-wallet", page: "/integration" },
         { title: "My Apps", icon: "mdi-receipt", page: "/apps" },
         {
           title: "Transaction",
           icon: "mdi-account-cash",
           page: "/transactions",
         },
-        { title: "Billing", icon: "mdi-credit-card-sync", page: "/billing" },
-        { title: "Settings", icon: "mdi-cog", page: "/setting" },
+        { title: "Profile", icon: "mdi-cog", page: "/profile" },
       ],
       right: null,
     };

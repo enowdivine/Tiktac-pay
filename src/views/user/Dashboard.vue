@@ -70,7 +70,7 @@ import Graph from "../../components/accounts/Graph";
 import Progress from "../../components/accounts/Progress";
 import Location from "../../components/accounts/Location";
 export default {
-  name: "Account",
+  name: "Dashboard",
   components: {
     LeftColumn,
     RightColumn,
