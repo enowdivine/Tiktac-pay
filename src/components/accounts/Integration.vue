@@ -102,7 +102,7 @@ h2 {
 }
 .main {
   width: 82%;
-  min-height: 700px;
+  height: 700px;
   background-color: whitesmoke;
   float: right;
 }

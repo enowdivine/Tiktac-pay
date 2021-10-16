@@ -62,5 +62,6 @@ export default {
   padding: 10px;
   background-color: whitesmoke;
   border-radius: 3px;
+  color: #0f054c;
 }
 </style>

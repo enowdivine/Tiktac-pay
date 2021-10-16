@@ -1,11 +1,11 @@
 <template>
   <div class="my-account">
-    <v-row>
-      <div class="left">
-        <div class="left-column">
-          <LeftColumn />
-        </div>
+    <div class="left">
+      <div class="left-column">
+        <LeftColumn />
       </div>
+    </div>
+    <v-row>
       <div class="middle">
         <v-row>
           <v-col
@@ -90,7 +90,8 @@ export default {
 <style scoped>
 .my-account {
   background-color: whitesmoke;
-  min-height: 700px;
+  height: 100vh;
+  display: flex;
   border-bottom: 20px solid white;
 }
 
@@ -117,16 +118,17 @@ export default {
   padding: 10px;
   min-height: 30px;
 }
+
 .left {
   width: 18%;
   height: 100%;
 }
 .middle {
-  width: 57%;
+  width: 70%;
   padding: 40px;
 }
 .right {
-  width: 25%;
+  width: 30%;
   padding-right: 20px;
 }
 .left-column {
@@ -156,5 +158,9 @@ export default {
   min-height: 300px;
   width: 50%;
   float: right;
+}
+.v-row {
+  background-color: whitesmoke;
+  width: 100%;
 }
 </style>

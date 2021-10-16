@@ -27,7 +27,7 @@ export default {
 }
 .links {
   margin-left: 20px;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 .headx {
   font-weight: bold;
@@ -37,9 +37,9 @@ export default {
   background-color: whitesmoke;
   width: 80%;
   margin: 0 auto;
+  margin-top: -100px;
   min-height: 200px;
   border-radius: 10px;
-  margin-top: 100px;
   margin-bottom: 50px;
 }
 </style>

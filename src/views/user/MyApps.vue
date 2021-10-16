@@ -10,7 +10,7 @@
     </div>
     <div class="main">
       <h2>Manage Applications</h2>
-      <v-btn color="grey" dark depressed class="new-app">New App</v-btn>
+      <NewAppBtn class="new-app" />
       <div class="app">
         <Apps />
       </div>
@@ -20,6 +20,7 @@
 
 <script>
 import Slider from "../../components/accounts/Slider.vue";
+import NewAppBtn from "../../components/NewAppBtn.vue";
 import GetApps from "../../components/GetApps.vue";
 import Apps from "../../components/accounts/Apps.vue";
 export default {
@@ -28,6 +29,7 @@ export default {
     GetApps,
     Slider,
     Apps,
+    NewAppBtn,
   },
 };
 </script>
@@ -41,8 +43,9 @@ h2 {
   text-align: left;
 }
 .new-app {
-  width: 96%;
-  margin: 10px 10px 10px 30px;
+  align-items: left;
+  font-weight: bold;
+  margin: 10px 10px 10px -920px;
 }
 .side-bar {
   width: 18%;

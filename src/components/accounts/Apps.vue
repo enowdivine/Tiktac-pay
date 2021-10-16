@@ -23,13 +23,15 @@
           <div class="stats">
             <v-row>
               <v-col>
-                <div class="mtnstat">mtn stat</div>
+                <div class="mtnstat">
+                  <MtnIncome />
+                </div>
               </v-col>
               <v-col>
-                <div class="orangestat">orange stat</div>
+                <div class="orangestat"><OrangeIncome /></div>
               </v-col>
               <v-col>
-                <div class="totalstat">total stat</div>
+                <div class="totalstat"><TotalAppIncome /></div>
               </v-col>
               <v-col>
                 <div class="btn-group">
@@ -57,7 +59,7 @@
           </div>
           <div class="btngroup">
             <v-btn color="green" dark class="transactions">Transactions</v-btn>
-            <v-btn color="red" dark class="del">Delete</v-btn>
+            <v-btn color="red" dark class="del">Delete App</v-btn>
           </div>
         </div>
       </v-expansion-panel-content>
@@ -69,12 +71,18 @@
 import AppGraph from "./AppGraph.vue";
 import AppChart from "./AppChart.vue";
 import Codes from "./Codes.vue";
+import MtnIncome from "./MtnIncome.vue";
+import OrangeIncome from "./OrangeIncome.vue";
+import TotalAppIncome from "./TotalAppIncome.vue";
 
 export default {
   components: {
     AppGraph,
     AppChart,
     Codes,
+    MtnIncome,
+    OrangeIncome,
+    TotalAppIncome,
   },
 };
 </script>
@@ -141,7 +149,7 @@ export default {
 }
 .codes {
   background-color: white;
-  min-height: 350px;
+  min-height: 530px;
   margin-top: 15px;
   padding: 20px;
   border-radius: 10px;
