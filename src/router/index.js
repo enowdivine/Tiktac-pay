@@ -9,6 +9,7 @@ import Login from "../views/Login.vue";
 import Dashboard from "../views/user/Dashboard.vue";
 import MyApps from "../views/user/MyApps.vue";
 import Transactions from "../views/user/Transactions.vue";
+import Profile from "../views/user/Profile.vue";
 import Integration from "../components/accounts/Integration.vue";
 
 Vue.use(VueRouter);
@@ -64,6 +65,11 @@ const routes = [
     path: "/integration",
     name: "Integration",
     component: Integration,
+  },
+  {
+    path: "/profile",
+    name: "Profile",
+    component: Profile,
   },
 ];
 

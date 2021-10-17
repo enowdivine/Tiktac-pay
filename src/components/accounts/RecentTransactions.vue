@@ -82,7 +82,7 @@ export default {
 
 <style scoped>
 .transaction {
-  background-color: white;
+  background-color: whitesmoke;
   border-radius: 10px;
   padding: 10px;
   width: 90%;

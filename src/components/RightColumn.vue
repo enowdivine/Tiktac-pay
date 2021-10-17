@@ -19,16 +19,16 @@
       <div class="all">
         <p><a href="#">See All</a></p>
       </div>
-      <Transactions />
+      <RecentTransactions />
     </div>
   </div>
 </template>
 
 <script>
-import Transactions from "./Transactions.vue";
+import RecentTransactions from "../components/accounts/RecentTransactions.vue";
 export default {
   components: {
-    Transactions,
+    RecentTransactions,
   },
 };
 </script>

@@ -9,10 +9,7 @@
       </div>
     </div>
     <div class="main">
-      <h2>Transaction History</h2>
-      <div class="transactions">
-        <Transactions />
-      </div>
+      <UserProfile />
     </div>
   </div>
 </template>
@@ -20,13 +17,13 @@
 <script>
 import Slider from "../../components/accounts/Slider.vue";
 import GetApps from "../../components/GetApps.vue";
-import Transactions from "../../components/Transactions.vue";
+import UserProfile from "../../components/accounts/UserProfile.vue";
 export default {
-  name: "Transaction",
+  name: "MyApps",
   components: {
     GetApps,
     Slider,
-    Transactions,
+    UserProfile,
   },
 };
 </script>
@@ -40,8 +37,9 @@ h2 {
   text-align: left;
 }
 .new-app {
-  width: 96%;
-  margin: 10px 10px 10px 30px;
+  align-items: left;
+  font-weight: bold;
+  margin: 10px 10px 10px -920px;
 }
 .side-bar {
   width: 18%;
@@ -64,14 +62,5 @@ h2 {
   min-height: 700px;
   background-color: whitesmoke;
   float: right;
-}
-.app {
-  background-color: white;
-  margin: 10px 20px 10px 30px;
-  padding: 10px 0 10px 0;
-  display: flex;
-}
-.transactions {
-  margin-left: 15px;
 }
 </style>
