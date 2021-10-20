@@ -1,5 +1,5 @@
 <template>
-  <v-app>   
+  <v-app>
     <v-main>
       <router-view />
     </v-main>
@@ -17,8 +17,30 @@ export default {
 </script>
 
 <style>
-#app{
+#app {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+}
+
+/* Scroll bar stylings */
+::-webkit-scrollbar {
+  width: 1px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--lightestgrey);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: whitesmoke;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 </style>
