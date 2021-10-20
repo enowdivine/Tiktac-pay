@@ -85,6 +85,7 @@ img {
     width: 100%;
     margin-top: 10px;
     margin: 0;
+    min-height: 350px;
   }
   img {
     width: 100%;

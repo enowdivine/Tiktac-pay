@@ -19,7 +19,11 @@
           <ul>
             <li><a href="#">FAQ's</a></li>
             <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
+            <li>
+              <router-link to="/terms&conditions"
+                >Terms & Condistions</router-link
+              >
+            </li>
             <li><a href="#">Cookies Policy</a></li>
             <li><a href="#">Contacts</a></li>
           </ul>
@@ -186,6 +190,10 @@ ul li a {
   .footer-below ul li {
     display: inline;
     margin: 10px;
+  }
+  .apps {
+    width: 60%;
+    margin: auto;
   }
 }
 </style>

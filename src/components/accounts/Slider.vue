@@ -3,11 +3,13 @@
     <div class="links">
       <v-navigation-drawer permanent>
         <v-list-item class="px-2">
-          <v-list-item-avatar>
-            <v-img src="/images/logo.jpeg"></v-img>
-          </v-list-item-avatar>
+          <!-- <v-list-item-avatar> 
+             <v-img src="/images/tiktacPay-light.png"></v-img>
+          </v-list-item-avatar> -->
 
-          <v-list-item-title class="headx">TiktacPay</v-list-item-title>
+          <img src="/images/tiktacPay-light.png" alt="" />
+
+          <!-- <v-list-item-title class="headx">TiktacPay</v-list-item-title> -->
         </v-list-item>
 
         <v-divider></v-divider>
@@ -63,5 +65,9 @@ export default {
   background-color: whitesmoke;
   border-radius: 3px;
   color: #0f054c;
+}
+img {
+  width: 100%;
+  padding: 10px;
 }
 </style>

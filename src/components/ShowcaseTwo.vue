@@ -44,11 +44,22 @@
 .image .v-card {
   width: 30%;
   justify-content: center;
-  height: 230px;
+
   border-radius: 20px;
   padding: 10px;
   background-color: whitesmoke;
   color: black;
   margin: auto;
+}
+@media only screen and (max-width: 480px) {
+  .image {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .image .v-card {
+    width: 80%;
+    margin: 20px auto;
+  }
 }
 </style>

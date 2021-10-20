@@ -113,6 +113,7 @@ img {
   }
   .image {
     width: 100%;
+    min-height: 400px;
     margin-top: 10px;
   }
   img {

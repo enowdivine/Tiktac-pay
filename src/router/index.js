@@ -11,6 +11,9 @@ import MyApps from "../views/user/MyApps.vue";
 import Transactions from "../views/user/Transactions.vue";
 import Profile from "../views/user/Profile.vue";
 import Integration from "../components/accounts/Integration.vue";
+import Policy from "../views/Policy.vue";
+import Blog from "../views/Blog.vue";
+import BlogPost from "../views/BlogPost.vue";
 
 Vue.use(VueRouter);
 
@@ -70,6 +73,21 @@ const routes = [
     path: "/profile",
     name: "Profile",
     component: Profile,
+  },
+  {
+    path: "/terms&conditions",
+    name: "Policy",
+    component: Policy,
+  },
+  {
+    path: "/blog",
+    name: "Blog",
+    component: Blog,
+  },
+  {
+    path: "/blogpost",
+    name: "BlogPost",
+    component: BlogPost,
   },
 ];
 

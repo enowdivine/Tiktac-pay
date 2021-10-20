@@ -79,5 +79,8 @@ img {
     margin-top: 15px;
     margin: 10px;
   }
+  .image {
+    width: 100%;
+  }
 }
 </style>

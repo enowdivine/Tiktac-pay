@@ -45,7 +45,7 @@ h2 {
   width: 18%;
   float: left;
   padding-left: 10px;
-  min-height: 700px;
+  min-height: 200px;
   background-color: white;
 }
 .get-apps {
@@ -54,13 +54,13 @@ h2 {
   margin: 0 auto;
   min-height: 200px;
   border-radius: 10px;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 .main {
   width: 82%;
-  min-height: 700px;
+  min-height: 200px;
   background-color: whitesmoke;
   float: right;
+  height: 100vh;
+  overflow-y: scroll;
 }
 </style>

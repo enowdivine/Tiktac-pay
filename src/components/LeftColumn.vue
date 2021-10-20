@@ -1,10 +1,12 @@
 <template>
   <div class="board">
-    <div class="links">
-      <Slider />
-    </div>
-    <div class="get-apps">
-      <GetApps />
+    <div class="sidebar">
+      <div class="links">
+        <Slider />
+      </div>
+      <div class="get-apps">
+        <GetApps />
+      </div>
     </div>
   </div>
 </template>
@@ -22,24 +24,17 @@ export default {
 </script>
 
 <style scoped>
-.board {
-  padding-bottom: 120px;
-}
 .links {
-  margin-left: 20px;
-  padding-top: 10px;
+  margin-left: 10px;
 }
 .headx {
   font-weight: bold;
 }
-
 .get-apps {
   background-color: whitesmoke;
   width: 80%;
   margin: 0 auto;
-  margin-top: -100px;
   min-height: 200px;
   border-radius: 10px;
-  margin-bottom: 50px;
 }
 </style>

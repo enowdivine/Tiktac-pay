@@ -23,6 +23,7 @@
           </div>
         </li>
         <li><router-link to="/contact">Contact</router-link></li>
+        <li><router-link to="/blog">Blog</router-link></li>
       </div>
       <div class="btn-group">
         <div class="btn1">
@@ -42,12 +43,13 @@
           class="icon"
           @click.stop="drawer = !drawer"
         >
+          bars
           <i class="fa fa-bars"></i>
         </a>
       </div>
     </div>
 
-    <v-navigation-drawer v-model="drawer" absolute temporary>
+    <v-navigation-drawer v-model="drawer" absolute temporary class="index">
       <v-list-item>
         <v-list-item-avatar>
           <v-img src="https://randomuser.me/api/portraits/men/78.jpg"></v-img>
@@ -67,8 +69,10 @@
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title>
-              <router-link :to="item.page">{{ item.title }}</router-link>
+            <v-list-item-title class="router-links">
+              <router-link :to="item.page" class="router-link">{{
+                item.title
+              }}</router-link>
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
@@ -91,6 +95,7 @@ export default {
         { title: "Python SDK", icon: "mdi-forum", page: "/pythonsdk" },
         { title: "Wordpress Plugins", icon: "mdi-forum", page: "/WPplugins" },
         { title: "Contact", icon: "mdi-forum", page: "/contact" },
+        { title: "Blog", icon: "mdi-forum", page: "/blog" },
       ],
     };
   },
@@ -228,6 +233,21 @@ li a:hover {
   background-color: none;
 }
 
+.v-navigation-drawer {
+  z-index: 999;
+  min-height: 400px;
+  position: absolute;
+}
+.router-link {
+  text-decoration: none;
+  color: #0f054c;
+  font-weight: bold;
+  font-size: 15px;
+}
+.router-links {
+  text-align: left;
+}
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   h1 {
@@ -242,7 +262,7 @@ li a:hover {
   .topnav a.icon {
     float: right;
     display: block;
-    margin-top: 13px;
+    margin-right: -100px;
     font-size: 20px;
   }
 }
@@ -261,6 +281,17 @@ li a:hover {
     float: none;
     display: block;
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .btn1,
+  .btn2,
+  .links {
+    display: none;
+  }
+  .logo {
+    margin: 0 0 0 -50px;
   }
 }
 </style>
