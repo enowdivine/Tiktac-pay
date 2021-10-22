@@ -3,11 +3,11 @@
     <Header />
     <section class="post">
       <div class="content">
+        <h2>Blog post title</h2>
         <div class="image">
           <img src="/images/showcase2.jpg" alt="" />
         </div>
         <div class="desc">
-          <h2>Blog post title</h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus
             sapiente rem consectetur impedit repellendus placeat exercitationem,
@@ -71,11 +71,15 @@ export default {
 
 <style scoped>
 .post {
-  margin-top: 100px;
+  margin-top: 130px;
 }
 .content {
   width: 50%;
   margin: 50px auto;
+}
+.content h2 {
+  margin: 20px 0 10px 0;
+  text-align: left;
 }
 .image {
   width: 100%;
@@ -83,11 +87,15 @@ export default {
 .image img {
   width: 100%;
 }
-.desc h2 {
-  margin-top: 20px;
-}
+
 .desc p {
   text-align: left;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    width: 90%;
+  }
 }
 </style>

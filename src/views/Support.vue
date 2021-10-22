@@ -278,4 +278,13 @@ h2 {
 .v-btn {
   margin: 10px;
 }
+.v-expansion-panel-content {
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  h2 {
+    margin-top: 40%;
+  }
+}
 </style>

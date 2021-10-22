@@ -56,10 +56,12 @@
     display: block;
     width: 100%;
     padding: 10px 0;
+    border-radius: 0;
   }
   .image .v-card {
     width: 80%;
     margin: 20px auto;
+    border-radius: 0;
   }
 }
 </style>

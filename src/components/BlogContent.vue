@@ -14,8 +14,6 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
               odio eveniet cum aliquam nihil tempora eaque, illum porro ipsam.
               Alias, modi at fugiat assumenda ratione quisquam atque nemo
-              voluptates impedit. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Repudiandae veritatis dolore inventore.
             </p>
           </div>
         </v-card>
@@ -60,5 +58,24 @@ export default {
 }
 .desc p {
   margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .structure {
+    width: 90%;
+  }
+  .v-card {
+    min-height: 420px;
+  }
+  .image {
+    width: 100%;
+  }
+  .image img {
+    width: 100%;
+    height: 200px;
+  }
+  .desc {
+    width: 100%;
+  }
 }
 </style>

@@ -88,8 +88,9 @@ img {
     min-height: 350px;
   }
   img {
-    width: 100%;
+    width: 95%;
     height: 100%;
+    border-radius: 0;
   }
 }
 </style>

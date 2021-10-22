@@ -7,7 +7,9 @@
              <v-img src="/images/tiktacPay-light.png"></v-img>
           </v-list-item-avatar> -->
 
-          <img src="/images/tiktacPay-light.png" alt="" />
+          <router-link to="/"
+            ><img src="/images/tiktacPay-light.png" alt=""
+          /></router-link>
 
           <!-- <v-list-item-title class="headx">TiktacPay</v-list-item-title> -->
         </v-list-item>
