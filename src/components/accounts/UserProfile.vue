@@ -3,7 +3,7 @@
     <div class="structure">
       <div class="head">
         <div class="profile-pic">
-          <img src="/images/logo.jpeg" alt="" />
+          <img src="/images/tiktacPay-light.png" alt="" />
         </div>
         <div class="infos">
           <div class="appnumber">
@@ -144,6 +144,7 @@
 .detail div span {
   float: left;
   margin-right: 10px;
+  font-weight: bold;
 }
 .v-btn {
   float: right;

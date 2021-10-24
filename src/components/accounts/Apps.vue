@@ -36,7 +36,8 @@
               <v-col>
                 <div class="btn-group">
                   <v-btn color="white" class="widthdraw">Widthdraw</v-btn>
-                  <v-btn color="#0f054c" dark class="paylink">Paylink</v-btn>
+
+                  <GeneratePaylink />
                 </div>
               </v-col>
             </v-row>
@@ -74,6 +75,7 @@ import Codes from "./Codes.vue";
 import MtnIncome from "./MtnIncome.vue";
 import OrangeIncome from "./OrangeIncome.vue";
 import TotalAppIncome from "./TotalAppIncome.vue";
+import GeneratePaylink from "../accounts/GeneratePaylink.vue";
 
 export default {
   components: {
@@ -83,6 +85,7 @@ export default {
     MtnIncome,
     OrangeIncome,
     TotalAppIncome,
+    GeneratePaylink,
   },
 };
 </script>

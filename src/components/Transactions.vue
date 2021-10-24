@@ -1,143 +1,233 @@
 <template>
-  <div class="body">
-    <div class="transaction">
-      <div class="desc">
-        <p class="type">Lorem ipsum dolor</p>
-        <p class="time">3 hours Ago</p>
-      </div>
-      <div class="amount"><p>+100 000 FCFA</p></div>
-    </div>
-    <div class="transaction">
-      <div class="desc">
-        <p class="type">Lorem ipsum dolor</p>
-        <p class="time">3 hours Ago</p>
-      </div>
-      <div class="amount"><p>+100 000 FCFA</p></div>
-    </div>
-    <div class="transaction">
-      <div class="desc">
-        <p class="type">Lorem ipsum dolor</p>
-        <p class="time">3 hours Ago</p>
-      </div>
-      <div class="amount"><p>+100 000 FCFA</p></div>
-    </div>
-    <div class="transaction">
-      <div class="desc">
-        <p class="type">Lorem ipsum dolor</p>
-        <p class="time">3 hours Ago</p>
-      </div>
-      <div class="amount"><p>+100 000 FCFA</p></div>
-    </div>
-    <div class="transaction">
-      <div class="desc">
-        <p class="type">Lorem ipsum dolor</p>
-        <p class="time">3 hours Ago</p>
-      </div>
-      <div class="amount"><p>+100 000 FCFA</p></div>
-    </div>
-    <div class="transaction">
-      <div class="desc">
-        <p class="type">Lorem ipsum dolor</p>
-        <p class="time">3 hours Ago</p>
-      </div>
-      <div class="amount"><p>+100 000 FCFA</p></div>
-    </div>
-    <div class="transaction">
-      <div class="desc">
-        <p class="type">Lorem ipsum dolor</p>
-        <p class="time">3 hours Ago</p>
-      </div>
-      <div class="amount"><p>+100 000 FCFA</p></div>
-    </div>
-    <div class="transaction">
-      <div class="desc">
-        <p class="type">Lorem ipsum dolor</p>
-        <p class="time">3 hours Ago</p>
-      </div>
-      <div class="amount"><p>+100 000 FCFA</p></div>
-    </div>
-    <div class="transaction">
-      <div class="desc">
-        <p class="type">Lorem ipsum dolor</p>
-        <p class="time">3 hours Ago</p>
-      </div>
-      <div class="amount"><p>+100 000 FCFA</p></div>
-    </div>
-    <div class="transaction">
-      <div class="desc">
-        <p class="type">Lorem ipsum dolor</p>
-        <p class="time">3 hours Ago</p>
-      </div>
-      <div class="amount"><p>+100 000 FCFA</p></div>
-    </div>
-    <div class="transaction">
-      <div class="desc">
-        <p class="type">Lorem ipsum dolor</p>
-        <p class="time">3 hours Ago</p>
-      </div>
-      <div class="amount"><p>+100 000 FCFA</p></div>
-    </div>
-    <div class="transaction">
-      <div class="desc">
-        <p class="type">Lorem ipsum dolor</p>
-        <p class="time">3 hours Ago</p>
-      </div>
-      <div class="amount"><p>+100 000 FCFA</p></div>
-    </div>
-    <div class="transaction">
-      <div class="desc">
-        <p class="type">Lorem ipsum dolor</p>
-        <p class="time">3 hours Ago</p>
-      </div>
-      <div class="amount"><p>+100 000 FCFA</p></div>
-    </div>
-    <div class="transaction">
-      <div class="desc">
-        <p class="type">Lorem ipsum dolor</p>
-        <p class="time">3 hours Ago</p>
-      </div>
-      <div class="amount"><p>+100 000 FCFA</p></div>
-    </div>
-  </div>
+  <v-card>
+    <v-card-title>
+      Transactions
+      <v-spacer></v-spacer>
+      <v-text-field
+        v-model="search"
+        append-icon="mdi-magnify"
+        label="Search"
+        single-line
+        hide-details
+      ></v-text-field>
+    </v-card-title>
+    <v-data-table
+      :headers="headers"
+      :items="desserts"
+      :search="search"
+    ></v-data-table>
+  </v-card>
 </template>
 
 <script>
 export default {
-  name: "Transactions",
-  data: () => ({}),
+  data() {
+    return {
+      search: "",
+      headers: [
+        {
+          text: "Name",
+          align: "start",
+          sortable: false,
+          value: "name",
+        },
+        { text: "Transaction Type", value: "type" },
+        { text: "Date", value: "date" },
+        { text: "Time", value: "time" },
+        { text: "Amount", value: "amount" },
+      ],
+      desserts: [
+        {
+          name: "Enow Divine",
+          type: "withdrawal",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "Received",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "sent",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "withdrawal",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "Received",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "sent",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "withdrawal",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "Received",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "sent",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "withdrawal",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "Received",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "sent",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "withdrawal",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "Received",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "sent",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "withdrawal",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "Received",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "sent",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "withdrawal",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "Received",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "sent",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "withdrawal",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "Received",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "sent",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "withdrawal",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "Received",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+        {
+          name: "Enow Divine",
+          type: "sent",
+          date: "12 / 06 / 2021",
+          time: "13:00",
+          amount: 40000,
+        },
+      ],
+    };
+  },
 };
 </script>
-
-<style scoped>
-.transaction {
-  background-color: white;
-  border-radius: 10px;
-  padding: 10px;
-  width: 90%;
-  margin: 0 20px 3px 20px;
-  display: flex;
-}
-.desc {
-  width: 50%;
-}
-.type {
-  margin: 0;
-  text-align: left;
-  font-size: 15px;
-}
-.desc .time {
-  margin: 0;
-  text-align: left;
-  font-size: 15px;
-  color: grey;
-}
-.amount {
-  width: 50%;
-}
-.amount p {
-  text-align: right;
-  font-size: 13px;
-  margin-top: 10px;
-  color: green;
-}
-</style>

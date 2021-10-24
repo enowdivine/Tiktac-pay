@@ -49,15 +49,9 @@
       </div>
     </div>
 
-    <v-navigation-drawer v-model="drawer" absolute temporary class="index">
+    <v-navigation-drawer v-model="drawer" absolute temporary class="sidebar">
       <v-list-item>
-        <v-list-item-avatar>
-          <v-img src="https://randomuser.me/api/portraits/men/78.jpg"></v-img>
-        </v-list-item-avatar>
-
-        <v-list-item-content>
-          <v-list-item-title>TiktacPay</v-list-item-title>
-        </v-list-item-content>
+        <img src="/images/tiktacPay-light.png" class="side-logo" alt="" />
       </v-list-item>
 
       <v-divider></v-divider>
@@ -129,6 +123,10 @@ header {
 .logo {
   margin-top: 7px;
 }
+.side-logo {
+  width: 100%;
+}
+
 h1 {
   color: #0f054c;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -235,7 +233,7 @@ li a:hover {
 
 .v-navigation-drawer {
   z-index: 999;
-  min-height: 400px;
+  min-height: 100vh;
   position: absolute;
 }
 .router-link {
