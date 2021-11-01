@@ -2,27 +2,21 @@
   <div class="text-center">
     <v-dialog v-model="dialog" width="500">
       <template v-slot:activator="{ on, attrs }">
-        <v-btn color="#0f054c" class="btn paylink" v-bind="attrs" v-on="on" dark
-          >Paylink</v-btn
+        <v-btn color="red" dark class="del" v-bind="attrs" v-on="on"
+          >Delete App</v-btn
         >
       </template>
 
       <v-card>
-        <v-card-title class="text-h5 grey lighten-2"
-          >Generate Paylink
-        </v-card-title>
-
         <v-card-text>
           <v-form v-model="valid">
             <v-container>
               <v-row>
-                <v-text-field
-                  class="mt-10"
-                  v-model="paylink"
-                  label="paylink"
-                  outlined
-                  required
-                ></v-text-field>
+                <div>
+                  <div class="text-center">
+                    <h3>Are You Sure You Want To Delete This App?</h3>
+                  </div>
+                </div>
               </v-row>
             </v-container>
           </v-form>
@@ -32,9 +26,8 @@
 
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn color="#0f054c" dark @click="dialog = false">
-            Create Link
-          </v-btn>
+          <v-btn color="#0f054c" text dark @click="dialog = false"> Yes </v-btn>
+          <v-btn color="red" text dark @click="dialog = false"> No </v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -55,6 +48,11 @@ export default {
 <style scoped>
 .v-btn {
   font-weight: bold;
+}
+h3{
+    margin-top: 15px;
+    margin-left: 25px;
+    color: black;
 }
 .paylink {
   font-weight: bold;

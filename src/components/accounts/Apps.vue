@@ -59,8 +59,8 @@
             <Codes />
           </div>
           <div class="btngroup">
-            <v-btn color="green" dark class="transactions">Transactions</v-btn>
-            <v-btn color="red" dark class="del">Delete App</v-btn>
+            <AppRecentTransaction />
+            <DeleteApp />
           </div>
         </div>
       </v-expansion-panel-content>
@@ -76,6 +76,8 @@ import MtnIncome from "./MtnIncome.vue";
 import OrangeIncome from "./OrangeIncome.vue";
 import TotalAppIncome from "./TotalAppIncome.vue";
 import GeneratePaylink from "../accounts/GeneratePaylink.vue";
+import DeleteApp from "../accounts/DeleteApp.vue";
+import AppRecentTransaction from "../accounts/AppRecentTransaction.vue";
 
 export default {
   components: {
@@ -86,6 +88,8 @@ export default {
     OrangeIncome,
     TotalAppIncome,
     GeneratePaylink,
+    DeleteApp,
+    AppRecentTransaction,
   },
 };
 </script>
