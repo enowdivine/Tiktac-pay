@@ -14,9 +14,7 @@
               </v-avatar>
               <span class="name">MY APP</span>
             </div>
-            <v-btn color="white" fab depressed small class="edit"
-              ><v-icon color="green">mdi-pencil</v-icon></v-btn
-            >
+            <EditApp />
           </div>
           <div class="clearfix"></div>
 
@@ -77,6 +75,7 @@ import OrangeIncome from "./OrangeIncome.vue";
 import TotalAppIncome from "./TotalAppIncome.vue";
 import GeneratePaylink from "../accounts/GeneratePaylink.vue";
 import DeleteApp from "../accounts/DeleteApp.vue";
+import EditApp from "../accounts/EditApp.vue";
 import AppRecentTransaction from "../accounts/AppRecentTransaction.vue";
 
 export default {
@@ -90,6 +89,7 @@ export default {
     GeneratePaylink,
     DeleteApp,
     AppRecentTransaction,
+    EditApp,
   },
 };
 </script>
@@ -117,9 +117,7 @@ export default {
   margin-left: 10px;
   font-weight: bold;
 }
-.edit {
-  float: right;
-}
+
 .mtnstat {
   background-color: white;
   padding: 10px;

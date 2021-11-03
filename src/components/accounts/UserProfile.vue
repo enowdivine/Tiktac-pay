@@ -22,36 +22,39 @@
             <span>Name:</span>
             <p>Enow Divine</p>
           </div>
-          <v-btn fab small>
+          <!-- <v-btn fab small>
             <v-icon>mdi-pencil</v-icon>
-          </v-btn>
+          </v-btn> -->
         </div>
         <div class="detail">
           <div>
             <span>Email:</span>
             <p>enowdivine14@gmail.com</p>
           </div>
-          <v-btn fab small>
+          <!-- <v-btn fab small>
             <v-icon>mdi-pencil</v-icon>
-          </v-btn>
+          </v-btn> -->
         </div>
         <div class="detail">
           <div>
             <span>Contact:</span>
             <p>+237 672491296</p>
           </div>
-          <v-btn fab small>
+          <!-- <v-btn fab small>
             <v-icon>mdi-pencil</v-icon>
-          </v-btn>
+          </v-btn> -->
         </div>
         <div class="detail">
           <div>
             <span>Address:</span>
             <p>Buea</p>
           </div>
-          <v-btn fab small>
+          <!-- <v-btn fab small>
             <v-icon>mdi-pencil</v-icon>
-          </v-btn>
+          </v-btn> -->
+        </div>
+        <div>
+          <EditProfile />
         </div>
       </div>
       <div class="pincode">
@@ -73,6 +76,19 @@
     </div>
   </div>
 </template>
+
+<script>
+
+import EditProfile from "../accounts/EditProfile.vue";
+
+
+export default {
+  components: {
+ 
+    EditProfile,
+  },
+};
+</script>
 
 <style scoped>
 .board {

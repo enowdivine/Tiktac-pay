@@ -55,7 +55,7 @@ export default {
   background-color: whitesmoke;
   border-radius: 10px;
   padding: 10px;
-  width: 160%;
+  width: 100%;
   margin: 0 10px 3px 10px;
   display: flex;
 }
@@ -81,5 +81,8 @@ export default {
   font-size: 13px;
   margin-top: 10px;
   color: green;
+}
+.v-card{
+  border-radius: 15px;
 }
 </style>
