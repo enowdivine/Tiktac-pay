@@ -170,4 +170,29 @@ export default {
 .del {
   font-weight: bold;
 }
+@media screen and (max-width: 768px) {
+  .chart{
+    display: none;
+  }
+  .content {
+  padding: 5px;
+ 
+}
+.v-expansion-panels{
+  width: 150%;
+  margin: 0 0 0 0;
+}
+  .v-expansion-panel-content{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .btngroup{
+    width: 100%;
+    display: none;
+  }
+  .graph{
+    width: 250%;
+  }
+}
 </style>

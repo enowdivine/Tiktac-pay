@@ -43,7 +43,6 @@
           class="icon"
           @click.stop="drawer = !drawer"
         >
-          bars
           <i class="fa fa-bars"></i>
         </a>
       </div>

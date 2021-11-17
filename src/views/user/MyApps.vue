@@ -103,4 +103,15 @@ h2 {
   padding: 10px;
   background-color: whitesmoke;
 }
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 82%;
+    padding: 0;
+    margin: 0;
+  }
+  .get-apps{
+    display: none;
+  }
+}
 </style>

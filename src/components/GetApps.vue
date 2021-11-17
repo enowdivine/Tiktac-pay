@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="board">
     <div class="image">
       <img src="/images/board.png" alt="" />
     </div>
@@ -37,4 +37,5 @@ export default {
 .links .google {
   width: 65px;
 }
+
 </style>

@@ -74,4 +74,9 @@ h2 {
 .transactions {
   margin-left: 15px;
 }
+@media screen and (max-width: 768px) {
+  .get-apps{
+    display: none;
+  }
+}
 </style>

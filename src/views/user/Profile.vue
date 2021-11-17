@@ -63,4 +63,9 @@ h2 {
   height: 100vh;
   overflow-y: scroll;
 }
+@media screen and (max-width: 768px) {
+  .get-apps{
+    display: none;
+  }
+}
 </style>
