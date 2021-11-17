@@ -4,7 +4,7 @@
       <v-icon> mdi-view-dashboard </v-icon>
       <p class="name">Lorem ipsum</p>
     </div>
-    <p class="price">10000</p>
+    <p class="price">1000000</p>
   </div>
 </template>
 

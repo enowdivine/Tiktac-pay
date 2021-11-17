@@ -19,7 +19,7 @@
             <input type="text" name="search" placeholder="Search..." /></div
         ></v-col>
       </v-row>
-      <v-row>
+      <v-row class="earnings">
         <v-col
           ><div class="one"><One /></div
         ></v-col>
@@ -161,5 +161,21 @@ export default {
 .scroller {
   height: 100vh;
   overflow-y: scroll;
+}
+
+@media screen and (max-width: 768px) {
+  .right, .chart {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  .middle {
+    width: 100%;
+    padding: 10px;
+  }
+  .map {
+  width: 220%;
+  max-height: 100px;
+}
 }
 </style>

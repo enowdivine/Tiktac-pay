@@ -37,4 +37,9 @@ export default {
   min-height: 200px;
   border-radius: 10px;
 }
+@media screen and (max-width: 768px) {
+  .get-apps{
+    display: none;
+  }
+}
 </style>
