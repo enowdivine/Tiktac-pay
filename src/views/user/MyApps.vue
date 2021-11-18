@@ -71,7 +71,7 @@ h2 {
 }
 .app {
   background-color: white;
-  margin: 10px 20px 10px 30px;
+  margin: 10px 10px 10px 5px;
   padding: 10px 0 10px 0;
   display: flex;
 }

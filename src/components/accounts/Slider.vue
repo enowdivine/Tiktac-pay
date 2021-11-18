@@ -61,6 +61,7 @@ export default {
   text-align: left;
   color: black;
   text-decoration: none;
+  margin-top: 13px;
 }
 .v-icon {
   padding: 10px;

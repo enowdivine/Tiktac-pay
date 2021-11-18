@@ -9,7 +9,7 @@
               <v-avatar>
                 <img
                   src="https://cdn.vuetifyjs.com/images/john.jpg"
-                  alt="John"
+                  alt="Profile Image"
                 />
               </v-avatar>
               <span class="name">MY APP</span>
@@ -102,13 +102,15 @@ export default {
   visibility: hidden;
   content: "";
 }
+.v-expansion-panels{
+  padding: 0;
+}
 .v-expansion-panel-content {
   background-color: whitesmoke;
+  padding: 10px 0 0 0;
+  margin: 0;
 }
-.content {
-  padding: 15px;
-  background-color: whitesmoke;
-}
+
 .appDesc {
   float: left;
   cursor: pointer;
@@ -171,28 +173,31 @@ export default {
   font-weight: bold;
 }
 @media screen and (max-width: 768px) {
-  .chart{
+  .v-expansion-panel-content {
+    padding: 5px;
+  }
+  .chart {
     display: none;
   }
   .content {
-  padding: 5px;
- 
-}
-.v-expansion-panels{
-  width: 150%;
-  margin: 0 0 0 0;
-}
-  .v-expansion-panel-content{
+    padding: 0;
+    margin: 0;
+  }
+  .v-expansion-panels {
+    width: 150%;
+    margin: 0 0 0 0;
+  }
+  .v-expansion-panel-content {
     width: 100%;
     padding: 0;
     margin: 0;
   }
-  .btngroup{
+  .btngroup {
     width: 100%;
     display: none;
   }
-  .graph{
-    width: 250%;
+  .graph {
+    width: 220%;
   }
 }
 </style>

@@ -3,7 +3,7 @@
     <div class="structure">
       <div class="head">
         <div class="profile-pic">
-          <img src="/images/tiktacPay-light.png" alt="" />
+          <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="" />
         </div>
         <div class="infos">
           <div class="appnumber">
@@ -78,13 +78,10 @@
 </template>
 
 <script>
-
 import EditProfile from "../accounts/EditProfile.vue";
-
 
 export default {
   components: {
- 
     EditProfile,
   },
 };
@@ -176,5 +173,33 @@ export default {
 .pin {
   margin-left: 10px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .structure {
+    width: 95%;
+  }
+  .head {
+    background-color: white;
+    min-height: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .profile-pic {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+  }
+  .profile-pic img {
+    width: 100%;
+  }
+  .profile-pic img {
+    float: none;
+  }
+  .infos {
+    width: 100%;
+    margin: 10px 0 0 0;
+  }
 }
 </style>
