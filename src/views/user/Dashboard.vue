@@ -123,7 +123,7 @@ export default {
 }
 .middle {
   width: 70%;
-  padding: 40px;
+  padding: 0px;
 }
 .right {
   width: 30%;
