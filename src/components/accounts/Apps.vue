@@ -4,7 +4,7 @@
       <v-expansion-panel-header>Apps</v-expansion-panel-header>
       <v-expansion-panel-content>
         <div class="content">
-          <div class="haed">
+          <div class="head">
             <div class="appDesc">
               <v-avatar>
                 <img
@@ -18,26 +18,24 @@
           </div>
           <div class="clearfix"></div>
 
-          <div class="stats">
-            <v-row>
-              <v-col>
+          <div>
+            <v-row class="stats">
+              <div class="box">
                 <div class="mtnstat">
                   <MtnIncome />
                 </div>
-              </v-col>
-              <v-col>
+              </div>
+              <div class="box">
                 <div class="orangestat"><OrangeIncome /></div>
-              </v-col>
-              <v-col>
+              </div>
+              <div class="box">
                 <div class="totalstat"><TotalAppIncome /></div>
-              </v-col>
-              <v-col>
-                <div class="btn-group">
-                  <v-btn color="white" class="widthdraw">Widthdraw</v-btn>
+              </div>
+              <div class="btn-group">
+                <v-btn color="white" class="widthdraw">Widthdraw</v-btn>
 
-                  <GeneratePaylink />
-                </div>
-              </v-col>
+                <GeneratePaylink />
+              </div>
             </v-row>
           </div>
           <div class="charts">
@@ -102,7 +100,7 @@ export default {
   visibility: hidden;
   content: "";
 }
-.v-expansion-panels{
+.v-expansion-panels {
   padding: 0;
 }
 .v-expansion-panel-content {
@@ -120,22 +118,35 @@ export default {
   font-weight: bold;
 }
 
+.stats{
+  display: flex;
+  justify-content: center;
+}
+.box{
+  width: 25%;
+  margin: 0.5%;
+}
+.btn-group{
+  width: 18%;
+  margin-top: 4px;
+}
+
 .mtnstat {
   background-color: white;
   padding: 10px;
-  min-height: 80px;
+  min-height: 40px;
   border-radius: 10px;
 }
 .orangestat {
   background-color: white;
   padding: 10px;
-  min-height: 80px;
+  min-height: 40px;
   border-radius: 10px;
 }
 .totalstat {
   background-color: white;
   padding: 10px;
-  min-height: 80px;
+  min-height: 40px;
   border-radius: 10px;
 }
 .widthdraw {
@@ -173,9 +184,19 @@ export default {
   font-weight: bold;
 }
 @media screen and (max-width: 768px) {
+  .head{
+    margin: 5px 0 0 0;
+  }
   .v-expansion-panel-content {
     padding: 5px;
   }
+  .box{
+    width: 100%;
+  }
+  .btn-group{
+  width: 100%;
+  margin: 5px 0 5px 0;
+}
   .chart {
     display: none;
   }

@@ -107,9 +107,9 @@ export default {
   width: 30%;
 }
 .profile-pic img {
-  width: 100%;
+  width: 90%;
   background-color: whitesmoke;
-  border-radius: 10px;
+  border-radius: 50%;
   float: left;
 }
 .infos {
@@ -187,7 +187,7 @@ export default {
     padding: 10px;
   }
   .profile-pic {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     display: block;
   }
@@ -200,6 +200,11 @@ export default {
   .infos {
     width: 100%;
     margin: 10px 0 0 0;
+    font-size: 12px;
+    padding: 10px;
+  }
+  .appincome{
+    margin-top: 10px;
   }
 }
 </style>

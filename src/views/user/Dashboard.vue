@@ -20,15 +20,15 @@
         ></v-col>
       </v-row>
       <v-row class="earnings">
-        <v-col
-          ><div class="one"><One /></div
-        ></v-col>
-        <v-col
-          ><div class="two"><One /></div
-        ></v-col>
-        <v-col
-          ><div class="three"><One /></div
-        ></v-col>
+        <div class="box">
+          <div class="one"><One /></div>
+        </div>
+        <div class="box">
+          <div class="two"><One /></div>
+        </div>
+        <div class="box">
+          <div class="three"><One /></div>
+        </div>
       </v-row>
       <v-row>
         <div class="middle-column">
@@ -108,6 +108,14 @@ export default {
   padding: 10px;
   outline: none;
 }
+.earnings {
+  display: flex;
+  justify-content: center;
+}
+.box{
+    width: 30%;
+    margin: 1%;
+}
 .one,
 .two,
 .three {
@@ -137,7 +145,8 @@ export default {
   border-radius: 10px;
   padding: 10px;
   min-height: 100px;
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
 }
 .right-column {
   background-color: white;
@@ -164,7 +173,12 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
-  .right, .chart {
+  .box{
+    width: 100%;
+    margin: 1%;
+}
+  .right,
+  .chart {
     display: none;
     margin: 0;
     padding: 0;
@@ -174,8 +188,8 @@ export default {
     padding: 10px;
   }
   .map {
-  width: 220%;
-  max-height: 100px;
-}
+    width: 220%;
+    max-height: 100px;
+  }
 }
 </style>
