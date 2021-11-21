@@ -45,10 +45,7 @@
                   <AppGraph />
                 </div>
               </v-col>
-              <v-col
-                ><div class="chart">
-                  <AppChart /></div
-              ></v-col>
+             
             </v-row>
           </div>
           <div class="codes">
@@ -66,7 +63,6 @@
 
 <script>
 import AppGraph from "./AppGraph.vue";
-import AppChart from "./AppChart.vue";
 import Codes from "./Codes.vue";
 import MtnIncome from "./MtnIncome.vue";
 import OrangeIncome from "./OrangeIncome.vue";
@@ -79,7 +75,6 @@ import AppRecentTransaction from "../accounts/AppRecentTransaction.vue";
 export default {
   components: {
     AppGraph,
-    AppChart,
     Codes,
     MtnIncome,
     OrangeIncome,
@@ -158,8 +153,7 @@ export default {
   margin-top: 5px;
   width: 80%;
 }
-.graph,
-.chart {
+.graph {
   min-height: 200px;
   background-color: white;
   border-radius: 10px;

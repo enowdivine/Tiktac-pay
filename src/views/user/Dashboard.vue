@@ -7,17 +7,17 @@
     </div>
 
     <div class="middle scroller">
-      <v-row>
-        <v-col
+      <v-row class="greetings">
+        <div
           ><div class="name">
             <h2>Hello Divine</h2>
             <p>Here you can manage all your transactions</p>
-          </div></v-col
+          </div></div
         >
-        <v-col
+        <div
           ><div class="search">
             <input type="text" name="search" placeholder="Search..." /></div
-        ></v-col>
+        ></div>
       </v-row>
       <v-row class="earnings">
         <div class="box">
@@ -93,8 +93,15 @@ export default {
   display: flex;
 }
 
+.greetings{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 10px 0 10px;
+}
+
 .name {
   text-align: left;
+  padding: 10px 0 0 10px;
 }
 
 .name p {
@@ -107,14 +114,15 @@ export default {
   border-radius: 10px;
   padding: 10px;
   outline: none;
+  margin: 15px 0 0 10px;
 }
 .earnings {
   display: flex;
   justify-content: center;
 }
-.box{
-    width: 30%;
-    margin: 1%;
+.box {
+  width: 30%;
+  margin: 1%;
 }
 .one,
 .two,
@@ -173,10 +181,10 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
-  .box{
+  .box {
     width: 100%;
     margin: 1%;
-}
+  }
   .right,
   .chart {
     display: none;

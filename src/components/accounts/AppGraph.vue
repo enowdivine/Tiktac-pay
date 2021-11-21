@@ -1,40 +1,60 @@
 <template>
-  <v-card class="mx-auto text-center" color="white" dark max-width="600">
-    <v-card-text>
-      <v-sheet color="rgba(0, 0, 0, .12)">
-        <v-sparkline
-          :value="value"
-          color="#0f054c"
-          height="120"
-          padding="24"
-          stroke-linecap="round"
-          smooth
-        >
-          <template v-slot:label="item"> ${{ item.value }} </template>
-        </v-sparkline>
-      </v-sheet>
-    </v-card-text>
-  </v-card>
+  <div class="chart-div">
+    <LineChart
+      :chartData="datacollection"
+      :options="chartOptions"
+      class="line-chart"
+    />
+  </div>
 </template>
 
 <script>
+import LineChart from "./LineChart";
+
 export default {
-  data: () => ({
-    value: [423, 446, 675, 510, 590, 610, 760],
-    //  value: [
-    //    "Jan",
-    //    "Feb",
-    //    "Mar",
-    //    "Apr",
-    //    "May",
-    //    "Jun",
-    //    "Jul",
-    //    "Aug",
-    //    "Sep",
-    //    "Oct",
-    //    "Nov",
-    //    "Dec",
-    //  ],
-  }),
+  components: {
+    LineChart,
+  },
+  data() {
+    return {
+      datacollection: {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May"],
+        datasets: [
+          {
+            label: "Numbers",
+            borderColor: "#0f054c",
+            borderWidth: 2,
+            // fill: false,
+            pointBackgroundColor: "0f054c",
+            pointRadius: 4,
+            pointHoverRadius: 8,
+            PointHoverBorderColor: "#000",
+            data: [100, 150, 300, 200, 258],
+          },
+        ],
+      },
+      chartOptions: {
+        maintainAspectRatio: false,
+        responsive: true,
+        tooltips: {
+          backgroundColor: "#00055e",
+          titleFontColor: "#ffffff",
+          bodyFontColor: "#ffffff",
+          position: "nearest",
+          mode: "nearest",
+          intersect: 0,
+          bodySpacing: 4,
+          xPadding: 20,
+        },
+      },
+    };
+  },
 };
 </script>
+
+<style>
+.line-chart {
+  width: 100%;
+  height: 100%;
+}
+</style>

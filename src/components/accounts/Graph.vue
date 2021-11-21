@@ -1,52 +1,60 @@
 <template>
-  <div class="small">
-    <line-chart :chart-data="datacollection"></line-chart>
-    <button @click="fillData()">Randomize</button>
+  <div class="chart-div">
+    <LineChart
+      :chartData="datacollection"
+      :options="chartOptions"
+      class="line-chart"
+    />
   </div>
 </template>
 
 <script>
-  import LineChart from './LineChart.vue'
+import LineChart from "./LineChart";
 
-  export default {
-    components: {
-      LineChart
-    },
-    data () {
-      return {
-        datacollection: null
-      }
-    },
-    mounted () {
-      this.fillData()
-    },
-    methods: {
-      fillData () {
-        this.datacollection = {
-          labels: [this.getRandomInt(), this.getRandomInt()],
-          datasets: [
-            {
-              label: 'Data One',
-              backgroundColor: '#f87979',
-              data: [this.getRandomInt(), this.getRandomInt()]
-            }, {
-              label: 'Data One',
-              backgroundColor: '#f87979',
-              data: [this.getRandomInt(), this.getRandomInt()]
-            }
-          ]
-        }
+export default {
+  components: {
+    LineChart,
+  },
+  data() {
+    return {
+      datacollection: {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May"],
+        datasets: [
+          {
+            label: "Numbers",
+            borderColor: "#0f054c",
+            borderWidth: 2,
+            // fill: false,
+            pointBackgroundColor: "0f054c",
+            pointRadius: 4,
+            pointHoverRadius: 8,
+            PointHoverBorderColor: "#000",
+            data: [100, 150, 300, 200, 258],
+          },
+        ],
       },
-      getRandomInt () {
-        return Math.floor(Math.random() * (50 - 5 + 1)) + 5
-      }
-    }
-  }
+      chartOptions: {
+        maintainAspectRatio: false,
+        responsive: true,
+        tooltips: {
+          backgroundColor: "#00055e",
+          titleFontColor: "#ffffff",
+          bodyFontColor: "#ffffff",
+          position: "nearest",
+          mode: "nearest",
+          intersect: 0,
+          bodySpacing: 4,
+          xPadding: 20,
+        },
+      },
+    };
+  },
+};
 </script>
 
 <style>
-  .small {
-    max-width: 600px;
-    margin:  150px auto;
-  }
+.line-chart {
+  width: 100%;
+  height: 100%;
+}
 </style>

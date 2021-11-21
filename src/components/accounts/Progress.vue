@@ -1,41 +1,44 @@
 <template>
-  <div class="text-center">
-    <v-progress-circular
-      :rotate="-90"
-      :size="100"
-      :width="15"
-      :value="value"
-      color="#0f054c"
-    >
-      {{ value }}
-    </v-progress-circular>
+  <div id="app">
+    <pie-chart :data="chartData" :options="chartOptions"></pie-chart>
   </div>
 </template>
 
 <script>
+import PieChart from "./PieChart.vue";
 export default {
+  name: "App",
+  components: {
+    PieChart
+  },
   data() {
     return {
-      interval: {},
-      value: 0,
-    };
-  },
-  beforeDestroy() {
-    clearInterval(this.interval);
-  },
-  mounted() {
-    this.interval = setInterval(() => {
-      if (this.value === 100) {
-        return (this.value = 0);
+      chartOptions: {
+        hoverBorderWidth: 20
+      },
+      chartData: {
+        hoverBackgroundColor: "red",
+        hoverBorderWidth: 10,
+        labels: ["MTN", "Orange"],
+        datasets: [
+          {
+            label: "Data One",
+            backgroundColor: ["green", "red"],
+            data: [10, 5]
+          }
+        ]
       }
-      this.value += 10;
-    }, 1000);
-  },
+    };
+  }
 };
 </script>
 
-<style scoped>
-.v-progress-circular {
-  margin: 1rem;
+<style>
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
 }
 </style>
