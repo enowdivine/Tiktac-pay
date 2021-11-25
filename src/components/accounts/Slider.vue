@@ -42,14 +42,14 @@ export default {
     return {
       items: [
         { title: "Dashboard", icon: "mdi-view-dashboard", page: "/dashboard" },
-        { title: "Integration", icon: "mdi-wallet", page: "/integration" },
-        { title: "My Apps", icon: "mdi-receipt", page: "/apps" },
+        { title: "Integration", icon: "mdi-cog-transfer", page: "/integration" },
+        { title: "My Apps", icon: "mdi-cellphone", page: "/apps" },
         {
           title: "Transaction",
-          icon: "mdi-account-cash",
+          icon: "mdi-cash-multiple",
           page: "/transactions",
         },
-        { title: "Profile", icon: "mdi-cog", page: "/profile" },
+        { title: "Profile", icon: "mdi-account", page: "/profile" },
       ],
       right: null,
     };

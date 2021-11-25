@@ -38,7 +38,7 @@
               </div>
             </v-row>
           </div>
-          <div class="charts">
+          <!-- <div class="charts">
             <v-row>
               <v-col>
                 <div class="graph">
@@ -47,7 +47,7 @@
               </v-col>
              
             </v-row>
-          </div>
+          </div> -->
           <div class="codes">
             <Codes />
           </div>
@@ -62,7 +62,7 @@
 </template>
 
 <script>
-import AppGraph from "./AppGraph.vue";
+// import AppGraph from "./AppGraph.vue";
 import Codes from "./Codes.vue";
 import MtnIncome from "./MtnIncome.vue";
 import OrangeIncome from "./OrangeIncome.vue";
@@ -74,7 +74,7 @@ import AppRecentTransaction from "../accounts/AppRecentTransaction.vue";
 
 export default {
   components: {
-    AppGraph,
+    // AppGraph,
     Codes,
     MtnIncome,
     OrangeIncome,
@@ -131,6 +131,7 @@ export default {
   padding: 10px;
   min-height: 40px;
   border-radius: 10px;
+  width: 100%;
 }
 .orangestat {
   background-color: white;
@@ -162,7 +163,7 @@ export default {
 .codes {
   background-color: white;
   min-height: 530px;
-  margin-top: 15px;
+  margin-top: 20px;
   padding: 20px;
   border-radius: 10px;
 }
@@ -186,10 +187,11 @@ export default {
   }
   .box{
     width: 100%;
+    margin-top: 10px;
   }
   .btn-group{
   width: 100%;
-  margin: 5px 0 5px 0;
+  margin: 10px 0 5px 0;
 }
   .chart {
     display: none;
@@ -211,8 +213,11 @@ export default {
     width: 100%;
     display: none;
   }
-  .graph {
+  /* .graph {
     width: 220%;
+  } */
+  .codes{
+    margin-top: 20px;
   }
 }
 </style>

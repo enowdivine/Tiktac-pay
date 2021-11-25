@@ -11,6 +11,7 @@
     <SectionSeven />
     <SectionEight />
     <Footer />
+    <FloatingButton />
   </div>
 </template>
 
@@ -26,6 +27,7 @@ import SectionSix from "../components/SectionSix";
 import SectionSeven from "../components/SectionSeven";
 import SectionEight from "../components/SectionEight";
 import Footer from "../components/Footer";
+import FloatingButton from "../components/FloatingButton";
 
 export default {
   name: "Home",
@@ -41,6 +43,11 @@ export default {
     SectionSeven,
     SectionEight,
     Footer,
+    FloatingButton,
   },
 };
 </script>
+
+<style scoped>
+
+</style>
