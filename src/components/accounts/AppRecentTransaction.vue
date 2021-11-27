@@ -2,29 +2,35 @@
   <div class="text-center">
     <v-dialog v-model="dialog" width="500">
       <template v-slot:activator="{ on, attrs }">
-        <v-btn color="green" class="transactions mr-3" v-bind="attrs" v-on="on" dark
+        <v-btn
+          color="green"
+          small
+          class="transactions mr-3"
+          v-bind="attrs"
+          v-on="on"
+          dark
           >Transactions</v-btn
         >
       </template>
 
-     <v-card>
-    <v-card-title>
-      Transactions
-      <v-spacer></v-spacer>
-      <v-text-field
-        v-model="search"
-        append-icon="mdi-magnify"
-        label="Search"
-        single-line
-        hide-details
-      ></v-text-field>
-    </v-card-title>
-    <v-data-table
-      :headers="headers"
-      :items="desserts"
-      :search="search"
-    ></v-data-table>
-  </v-card>
+      <v-card>
+        <v-card-title>
+          Transactions
+          <v-spacer></v-spacer>
+          <v-text-field
+            v-model="search"
+            append-icon="mdi-magnify"
+            label="Search"
+            single-line
+            hide-details
+          ></v-text-field>
+        </v-card-title>
+        <v-data-table
+          :headers="headers"
+          :items="desserts"
+          :search="search"
+        ></v-data-table>
+      </v-card>
     </v-dialog>
   </div>
 </template>
@@ -285,7 +291,7 @@ export default {
   margin-top: 10px;
   color: green;
 }
-.v-card{
+.v-card {
   border-radius: 15px;
 }
 </style>

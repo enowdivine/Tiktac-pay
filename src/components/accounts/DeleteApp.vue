@@ -2,8 +2,8 @@
   <div class="text-center">
     <v-dialog v-model="dialog" width="500">
       <template v-slot:activator="{ on, attrs }">
-        <v-btn color="red" dark class="del" v-bind="attrs" v-on="on"
-          >Delete App</v-btn
+        <v-btn color="red" dark small class="del" v-bind="attrs" v-on="on"
+          >Delete</v-btn
         >
       </template>
 
@@ -49,10 +49,10 @@ export default {
 .v-btn {
   font-weight: bold;
 }
-h3{
-    margin-top: 15px;
-    margin-left: 25px;
-    color: black;
+h3 {
+  margin-top: 15px;
+  margin-left: 25px;
+  color: black;
 }
 .paylink {
   font-weight: bold;

@@ -210,8 +210,8 @@ export default {
     margin: 0;
   }
   .btngroup {
-    width: 100%;
-    display: none;
+    width: 90%;
+    
   }
   /* .graph {
     width: 220%;
